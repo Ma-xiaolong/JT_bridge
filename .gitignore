@@ -1,0 +1,109 @@
+# ===========================
+#   Visual Studio C++ 项目通用忽略规则
+# ===========================
+
+# 用户相关文件
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# 编译输出目录
+Debug/
+Release/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Bb]in/
+[Oo]bj/
+out/
+build/
+
+# 临时文件与缓存
+*.log
+*.tlog
+*.pdb
+*.idb
+*.ilk
+*.aps
+*.ncb
+*.sdf
+*.opensdf
+*.cachefile
+*.db
+*.opendb
+*.ipch
+*.tmp
+*.bak
+*.dmp
+
+# 自动生成文件夹（你的 VR-Link 工程）
+jammer/
+jamInter/
+passiveJammer/
+passiveJammerInter/
+radarcontrol/
+simcontrol/
+weatherinit/
+weatherresultinit/
+ZHAircraftControlCmdInter/
+ZHAircraftEntity/
+ZHAircraftSimulatorConfigInter/
+ZHCommPayload/
+ZHCommPayloadInter/
+ZHCommResult/
+ZHFormationDecisionInter/
+ZHIntentRecognitionInter/
+ZHLightWeaponDamageInter/
+ZHLightWeaponExplodeInter/
+ZHLightWeaponFireInter/
+ZHLightWeaponPayload/
+ZHradar/
+ZHradarinter/
+ZHradarresult/
+ZHWeaponLoadInfo/
+
+# CMake / VS 生成的配置文件
+CMakeFiles/
+CMakeCache.txt
+*.vcxproj.user
+*.vcxproj.filters
+*.lastbuildstate
+*.intermediate.manifest
+
+# 输出文件
+*.dll
+*.exe
+*.lib
+*.exp
+*.manifest
+
+# 链接器和符号文件
+*.obj
+*.bsc
+*.pch
+*.pdb
+*.rsp
+*.sbr
+
+# 日志和诊断
+*.log
+*.vsidx
+*.json
+*.xml~
+
+# ===========================
+#   可追踪的内容（保留）
+# ===========================
+!*.h
+!*.hpp
+!*.cpp
+!*.c
+!*.props
+!*.sln
+!*.vcxproj
+!*.filters
+!README.md
+!LICENSE
+!.gitignore

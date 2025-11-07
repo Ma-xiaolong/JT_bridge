@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    DLL 项目配置模板
+    适用于：VR-Link 4.0.9d (2013年) + RTI 4.4.2 (2013年)
+    编译器：Visual Studio 2010 (v100工具集)
+    
+    使用方法：
+    1. 复制此模板到你的 .vcxproj 文件中
+    2. 替换 YOURPROJECT_EXPORTS 为你的项目导出宏
+    3. 根据实际情况调整库路径
+    4. 添加你的源文件和头文件
+-->
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  
+  <!-- ============================================ -->
+  <!-- 1. Debug|x64 编译配置（关键配置） -->
+  <!-- ============================================ -->
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      
+      <!-- 预处理器定义 -->
+      <PreprocessorDefinitions>_DEBUG;YOURPROJECT_EXPORTS;_WINDOWS;_USRDLL;DtHLA;RTI_USES_STD_FSTREAM;MAK_DYNAMIC_LIBRARY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      
+      <ConformanceMode>true</ConformanceMode>
+      
+      <!-- 预编译头：建议不使用（避免兼容性问题） -->
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      
+      <!-- 运行时库：Debug 版本（必须） -->
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      
+      <!-- 库路径：根据实际环境调整 -->
+      <AdditionalLibraryDirectories>D:\MAK\vrlink4.0.9d\lib64;D:\MAK\makRti4.4.2\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      
+      <!-- 库文件：Debug 版本（带 'd' 后缀） -->
+      <!-- 注意：vlutild.lib 必须放在最前面 -->
+      <AdditionalDependencies>vlutild.lib;
+vl.lib;
+vld.lib;
+vlHLA13d.lib;
+libRti-NG.lib;
+ws2_32.lib;
+matrixd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  
+  <!-- ============================================ -->
+  <!-- 2. Release|x64 编译配置 -->
+  <!-- ============================================ -->
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      
+      <!-- 预处理器定义 -->
+      <PreprocessorDefinitions>NDEBUG;YOURPROJECT_EXPORTS;_WINDOWS;_USRDLL;DtHLA;RTI_USES_STD_FSTREAM;MAK_DYNAMIC_LIBRARY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      
+      <!-- 库路径 -->
+      <AdditionalLibraryDirectories>D:\MAK\vrlink4.0.9d\lib64;D:\MAK\makRti4.4.2\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      
+      <!-- 库文件：Release 版本（不带 'd' 后缀） -->
+      <AdditionalDependencies>vlutil.lib;
+vl.lib;
+vlHLA13.lib;
+libRti-NG.lib;
+ws2_32.lib;
+matrix.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  
+  <!-- ============================================ -->
+  <!-- 3. 包含路径和库路径（全局配置） -->
+  <!-- ============================================ -->
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <!-- 头文件路径：根据实际环境调整 -->
+    <IncludePath>D:\MAK\makRti4.4.2\include\HLA13;D:\MAK\vrlink4.0.9d\include;$(IncludePath)</IncludePath>
+    
+    <!-- 库文件路径：根据实际环境调整 -->
+    <LibraryPath>D:\MAK\vrlink4.0.9d\lib64;D:\MAK\makRti4.4.2\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  
+  <!-- ============================================ -->
+  <!-- 4. 工具集版本配置 -->
+  <!-- ============================================ -->
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <!-- 工具集：v100 = VS2010（匹配2013年版本的库） -->
+    <PlatformToolset>v100</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  
+  <!-- ============================================ -->
+  <!-- 5. 文件列表示例 -->
+  <!-- ============================================ -->
+  <!--
+  <ItemGroup>
+    <ClInclude Include="yourmodule\*.h" />
+    <ClCompile Include="yourmodule\*.cpp" />
+    <ClCompile Include="yourmodule\VRLinkUtilStub.cpp" />  <!-- 如果需要解决 DtWarn/DtInfo 链接问题 -->
+  </ItemGroup>
+  -->
+  
+</Project>
+

@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="头文件\object">
+      <UniqueIdentifier>{c7616d05-6d3f-4dd0-8963-2d99384b1114}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\interaction">
+      <UniqueIdentifier>{dae7daeb-dc01-4b3d-a1c9-ff41a2728f7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\object">
+      <UniqueIdentifier>{9d78aa44-4d7b-45da-8d9c-d5313e9f9ada}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\interaction">
+      <UniqueIdentifier>{e20c4a46-aaf3-477a-a87f-73e93849558f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\object\Jammer">
+      <UniqueIdentifier>{2af4530f-5b26-4589-995a-cef09f88b6d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\object\Jammer">
+      <UniqueIdentifier>{c73872ac-bd83-4104-84bd-51376403193e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VRLink">
+      <UniqueIdentifier>{96e6d1a1-0b0d-4e38-9ee7-b110681cbdff}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ExportAPI.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="EventBridge.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="VRLinkManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="jammer\CtIJammerStateRepository.h">
+      <Filter>头文件\object\Jammer</Filter>
+    </ClInclude>
+    <ClInclude Include="jammer\CtRefIJammer.h">
+      <Filter>头文件\object\Jammer</Filter>
+    </ClInclude>
+    <ClInclude Include="jammer\CtRefIJammerList.h">
+      <Filter>头文件\object\Jammer</Filter>
+    </ClInclude>
+    <ClInclude Include="jammer\CtIJammerObjDec.h">
+      <Filter>头文件\object\Jammer</Filter>
+    </ClInclude>
+    <ClInclude Include="jammer\CtIJammerObjEnc.h">
+      <Filter>头文件\object\Jammer</Filter>
+    </ClInclude>
+    <ClInclude Include="jammer\CtIJammerPublisher.h">
+      <Filter>头文件\object\Jammer</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ExportAPI.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="EventBridge.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="VRLinkManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="jammer\CtIJammerStateRepository.cpp">
+      <Filter>源文件\object\Jammer</Filter>
+    </ClCompile>
+    <ClCompile Include="jammer\CtRefIJammer.cpp">
+      <Filter>源文件\object\Jammer</Filter>
+    </ClCompile>
+    <ClCompile Include="jammer\CtRefIJammerList.cpp">
+      <Filter>源文件\object\Jammer</Filter>
+    </ClCompile>
+    <ClCompile Include="jammer\CtIJammerObjDec.cpp">
+      <Filter>源文件\object\Jammer</Filter>
+    </ClCompile>
+    <ClCompile Include="jammer\CtIJammerObjEnc.cpp">
+      <Filter>源文件\object\Jammer</Filter>
+    </ClCompile>
+    <ClCompile Include="jammer\CtIJammerPublisher.cpp">
+      <Filter>源文件\object\Jammer</Filter>
+    </ClCompile>
+    <ClCompile Include="jammer\VRLinkUtilStub.cpp">
+      <Filter>源文件\object\Jammer</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="JT_bridge.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
