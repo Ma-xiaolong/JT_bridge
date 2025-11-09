@@ -21,18 +21,85 @@
   <ItemGroup>
     <ClInclude Include="callbacks\JammerCallbacks.h" />
     <ClInclude Include="callbacks\PassiveJammerCallbacks.h" />
+    <ClInclude Include="callbacks\ZHAircraftEntityCallbacks.h" />
+    <ClInclude Include="callbacks\ZHRadarCallbacks.h" />
+    <ClInclude Include="callbacks\ZHLightWeaponPayloadCallbacks.h" />
+    <ClInclude Include="callbacks\ZHRadarResultCallbacks.h" />
+    <ClInclude Include="callbacks\ZHWeaponLoadInfoCallbacks.h" />
+    <ClInclude Include="callbacks\JammerInteractionCallbacks.h" />
+    <ClInclude Include="callbacks\PassiveJammerInteractionCallbacks.h" />
+    <ClInclude Include="callbacks\WeatherInitInteractionCallbacks.h" />
+    <ClInclude Include="callbacks\WeatherResultInteractionCallbacks.h" />
+    <ClInclude Include="callbacks\ZHAircraftSimulatorConfigInteractionCallbacks.h" />
+    <ClInclude Include="callbacks\ZHRadarReqInteractionCallbacks.h" />
+    <ClInclude Include="callbacks\ZHLightWeaponDamageInteractionCallbacks.h" />
+    <ClInclude Include="callbacks\ZHLightWeaponExplodeInteractionCallbacks.h" />
     <ClInclude Include="jammer\CtIJammerObjDec.h" />
     <ClInclude Include="jammer\CtIJammerObjEnc.h" />
     <ClInclude Include="jammer\CtIJammerPublisher.h" />
     <ClInclude Include="jammer\CtIJammerStateRepository.h" />
     <ClInclude Include="jammer\CtRefIJammer.h" />
     <ClInclude Include="jammer\CtRefIJammerList.h" />
+    <ClInclude Include="jamInter\CtIJammerinteraction.h" />
+    <ClInclude Include="jamInter\CtIJammerIntEnc.h" />
+    <ClInclude Include="jamInter\CtIJammerIntDec.h" />
+    <ClInclude Include="passiveJammerInter\CtIPassiveJammerinteraction.h" />
+    <ClInclude Include="passiveJammerInter\CtIPassiveJammerIntEnc.h" />
+    <ClInclude Include="passiveJammerInter\CtIPassiveJammerIntDec.h" />
+    <ClInclude Include="weatherinit\CtIWeatherInitinteraction.h" />
+    <ClInclude Include="weatherinit\CtIWeatherInitIntEnc.h" />
+    <ClInclude Include="weatherinit\CtIWeatherInitIntDec.h" />
+    <ClInclude Include="weatherresultinter\CtIWeatherResultsinteraction.h" />
+    <ClInclude Include="weatherresultinter\CtIWeatherResultsIntEnc.h" />
+    <ClInclude Include="weatherresultinter\CtIWeatherResultsIntDec.h" />
+    <ClInclude Include="ZHAircraftSimulatorConfigInter\CtZHAircraftSimulatorConfigReqinteraction.h" />
+    <ClInclude Include="ZHAircraftSimulatorConfigInter\CtZHAircraftSimulatorConfigReqIntEnc.h" />
+    <ClInclude Include="ZHAircraftSimulatorConfigInter\CtZHAircraftSimulatorConfigReqIntDec.h" />
+    <ClInclude Include="zhradarinter\CtZHRadarReqinteraction.h" />
+    <ClInclude Include="zhradarinter\CtZHRadarReqIntEnc.h" />
+    <ClInclude Include="zhradarinter\CtZHRadarReqIntDec.h" />
+    <ClInclude Include="ZHLightWeaponDamageInter\CtZHLightWeaponDamageReqinteraction.h" />
+    <ClInclude Include="ZHLightWeaponDamageInter\CtZHLightWeaponDamageReqIntEnc.h" />
+    <ClInclude Include="ZHLightWeaponDamageInter\CtZHLightWeaponDamageReqIntDec.h" />
+    <ClInclude Include="ZHLightWeaponExplodeInter\CtZHLightWeaponExplodeReqinteraction.h" />
+    <ClInclude Include="ZHLightWeaponExplodeInter\CtZHLightWeaponExplodeReqIntEnc.h" />
+    <ClInclude Include="ZHLightWeaponExplodeInter\CtZHLightWeaponExplodeReqIntDec.h" />
     <ClInclude Include="passiveJammer\CtIPassiveJammerObjDec.h" />
     <ClInclude Include="passiveJammer\CtIPassiveJammerObjEnc.h" />
     <ClInclude Include="passiveJammer\CtIPassiveJammerPublisher.h" />
     <ClInclude Include="passiveJammer\CtIPassiveJammerStateRepository.h" />
     <ClInclude Include="passiveJammer\CtRefIPassiveJammer.h" />
     <ClInclude Include="passiveJammer\CtRefIPassiveJammerList.h" />
+    <ClInclude Include="ZHAircraftEntity\CtZHAircraftEntityObjDec.h" />
+    <ClInclude Include="ZHAircraftEntity\CtZHAircraftEntityObjEnc.h" />
+    <ClInclude Include="ZHAircraftEntity\CtZHAircraftEntityPublisher.h" />
+    <ClInclude Include="ZHAircraftEntity\CtRefZHAircraftEntity.h" />
+    <ClInclude Include="ZHAircraftEntity\CtRefZHAircraftEntityList.h" />
+    <ClInclude Include="ZHAircraftEntity\CtZHAircraftEntityStateRepository.h" />
+    <ClInclude Include="zhradar\CtZHRadarObjDec.h" />
+    <ClInclude Include="zhradar\CtZHRadarObjEnc.h" />
+    <ClInclude Include="zhradar\CtZHRadarPublisher.h" />
+    <ClInclude Include="zhradar\CtZHRadarStateRepository.h" />
+    <ClInclude Include="zhradar\CtRefZHRadar.h" />
+    <ClInclude Include="zhradar\CtRefZHRadarList.h" />
+    <ClInclude Include="ZHLightWeaponPayload\CtZHLightWeaponPayloadObjDec.h" />
+    <ClInclude Include="ZHLightWeaponPayload\CtZHLightWeaponPayloadObjEnc.h" />
+    <ClInclude Include="ZHLightWeaponPayload\CtZHLightWeaponPayloadPublisher.h" />
+    <ClInclude Include="ZHLightWeaponPayload\CtZHLightWeaponPayloadStateRepository.h" />
+    <ClInclude Include="ZHLightWeaponPayload\CtRefZHLightWeaponPayload.h" />
+    <ClInclude Include="ZHLightWeaponPayload\CtRefZHLightWeaponPayloadList.h" />
+    <ClInclude Include="zhradarresult\CtZHRadarResultObjDec.h" />
+    <ClInclude Include="zhradarresult\CtZHRadarResultObjEnc.h" />
+    <ClInclude Include="zhradarresult\CtZHRadarResultPublisher.h" />
+    <ClInclude Include="zhradarresult\CtZHRadarResultStateRepository.h" />
+    <ClInclude Include="zhradarresult\CtRefZHRadarResult.h" />
+    <ClInclude Include="zhradarresult\CtRefZHRadarResultList.h" />
+    <ClInclude Include="ZHWeaponLoadInfo\CtZHWeaponLoadInfoObjDec.h" />
+    <ClInclude Include="ZHWeaponLoadInfo\CtZHWeaponLoadInfoObjEnc.h" />
+    <ClInclude Include="ZHWeaponLoadInfo\CtZHWeaponLoadInfoPublisher.h" />
+    <ClInclude Include="ZHWeaponLoadInfo\CtZHWeaponLoadInfoStateRepository.h" />
+    <ClInclude Include="ZHWeaponLoadInfo\CtRefZHWeaponLoadInfo.h" />
+    <ClInclude Include="ZHWeaponLoadInfo\CtRefZHWeaponLoadInfoList.h" />
     <ClInclude Include="EventBridge.h" />
     <ClInclude Include="ExportAPI.h" />
     <ClInclude Include="resource.h" />
@@ -41,6 +108,19 @@
   <ItemGroup>
     <ClCompile Include="callbacks\JammerCallbacks.cpp" />
     <ClCompile Include="callbacks\PassiveJammerCallbacks.cpp" />
+    <ClCompile Include="callbacks\ZHAircraftEntityCallbacks.cpp" />
+    <ClCompile Include="callbacks\ZHRadarCallbacks.cpp" />
+    <ClCompile Include="callbacks\ZHLightWeaponPayloadCallbacks.cpp" />
+    <ClCompile Include="callbacks\ZHRadarResultCallbacks.cpp" />
+    <ClCompile Include="callbacks\ZHWeaponLoadInfoCallbacks.cpp" />
+    <ClCompile Include="callbacks\JammerInteractionCallbacks.cpp" />
+    <ClCompile Include="callbacks\PassiveJammerInteractionCallbacks.cpp" />
+    <ClCompile Include="callbacks\WeatherInitInteractionCallbacks.cpp" />
+    <ClCompile Include="callbacks\WeatherResultInteractionCallbacks.cpp" />
+    <ClCompile Include="callbacks\ZHAircraftSimulatorConfigInteractionCallbacks.cpp" />
+    <ClCompile Include="callbacks\ZHRadarReqInteractionCallbacks.cpp" />
+    <ClCompile Include="callbacks\ZHLightWeaponDamageInteractionCallbacks.cpp" />
+    <ClCompile Include="callbacks\ZHLightWeaponExplodeInteractionCallbacks.cpp" />
     <ClCompile Include="jammer\CtIJammerObjDec.cpp" />
     <ClCompile Include="jammer\CtIJammerObjEnc.cpp" />
     <ClCompile Include="jammer\CtIJammerPublisher.cpp" />
@@ -48,12 +128,66 @@
     <ClCompile Include="jammer\CtRefIJammer.cpp" />
     <ClCompile Include="jammer\CtRefIJammerList.cpp" />
     <ClCompile Include="jammer\VRLinkUtilStub.cpp" />
+    <ClCompile Include="jamInter\CtIJammerinteraction.cpp" />
+    <ClCompile Include="jamInter\CtIJammerIntEnc.cpp" />
+    <ClCompile Include="jamInter\CtIJammerIntDec.cpp" />
+    <ClCompile Include="passiveJammerInter\CtIPassiveJammerinteraction.cpp" />
+    <ClCompile Include="passiveJammerInter\CtIPassiveJammerIntEnc.cpp" />
+    <ClCompile Include="passiveJammerInter\CtIPassiveJammerIntDec.cpp" />
+    <ClCompile Include="weatherinit\CtIWeatherInitinteraction.cpp" />
+    <ClCompile Include="weatherinit\CtIWeatherInitIntEnc.cpp" />
+    <ClCompile Include="weatherinit\CtIWeatherInitIntDec.cpp" />
+    <ClCompile Include="weatherresultinter\CtIWeatherResultsinteraction.cpp" />
+    <ClCompile Include="weatherresultinter\CtIWeatherResultsIntEnc.cpp" />
+    <ClCompile Include="weatherresultinter\CtIWeatherResultsIntDec.cpp" />
+    <ClCompile Include="ZHAircraftSimulatorConfigInter\CtZHAircraftSimulatorConfigReqinteraction.cpp" />
+    <ClCompile Include="ZHAircraftSimulatorConfigInter\CtZHAircraftSimulatorConfigReqIntEnc.cpp" />
+    <ClCompile Include="ZHAircraftSimulatorConfigInter\CtZHAircraftSimulatorConfigReqIntDec.cpp" />
+    <ClCompile Include="zhradarinter\CtZHRadarReqinteraction.cpp" />
+    <ClCompile Include="zhradarinter\CtZHRadarReqIntEnc.cpp" />
+    <ClCompile Include="zhradarinter\CtZHRadarReqIntDec.cpp" />
+    <ClCompile Include="ZHLightWeaponDamageInter\CtZHLightWeaponDamageReqinteraction.cpp" />
+    <ClCompile Include="ZHLightWeaponDamageInter\CtZHLightWeaponDamageReqIntEnc.cpp" />
+    <ClCompile Include="ZHLightWeaponDamageInter\CtZHLightWeaponDamageReqIntDec.cpp" />
+    <ClCompile Include="ZHLightWeaponExplodeInter\CtZHLightWeaponExplodeReqinteraction.cpp" />
+    <ClCompile Include="ZHLightWeaponExplodeInter\CtZHLightWeaponExplodeReqIntEnc.cpp" />
+    <ClCompile Include="ZHLightWeaponExplodeInter\CtZHLightWeaponExplodeReqIntDec.cpp" />
     <ClCompile Include="passiveJammer\CtIPassiveJammerObjDec.cpp" />
     <ClCompile Include="passiveJammer\CtIPassiveJammerObjEnc.cpp" />
     <ClCompile Include="passiveJammer\CtIPassiveJammerPublisher.cpp" />
     <ClCompile Include="passiveJammer\CtIPassiveJammerStateRepository.cpp" />
     <ClCompile Include="passiveJammer\CtRefIPassiveJammer.cpp" />
     <ClCompile Include="passiveJammer\CtRefIPassiveJammerList.cpp" />
+    <ClCompile Include="ZHAircraftEntity\CtZHAircraftEntityObjDec.cpp" />
+    <ClCompile Include="ZHAircraftEntity\CtZHAircraftEntityObjEnc.cpp" />
+    <ClCompile Include="ZHAircraftEntity\CtZHAircraftEntityPublisher.cpp" />
+    <ClCompile Include="ZHAircraftEntity\CtRefZHAircraftEntity.cpp" />
+    <ClCompile Include="ZHAircraftEntity\CtRefZHAircraftEntityList.cpp" />
+    <ClCompile Include="ZHAircraftEntity\CtZHAircraftEntityStateRepository.cpp" />
+    <ClCompile Include="zhradar\CtZHRadarObjDec.cpp" />
+    <ClCompile Include="zhradar\CtZHRadarObjEnc.cpp" />
+    <ClCompile Include="zhradar\CtZHRadarPublisher.cpp" />
+    <ClCompile Include="zhradar\CtZHRadarStateRepository.cpp" />
+    <ClCompile Include="zhradar\CtRefZHRadar.cpp" />
+    <ClCompile Include="zhradar\CtRefZHRadarList.cpp" />
+    <ClCompile Include="ZHLightWeaponPayload\CtZHLightWeaponPayloadObjDec.cpp" />
+    <ClCompile Include="ZHLightWeaponPayload\CtZHLightWeaponPayloadObjEnc.cpp" />
+    <ClCompile Include="ZHLightWeaponPayload\CtZHLightWeaponPayloadPublisher.cpp" />
+    <ClCompile Include="ZHLightWeaponPayload\CtZHLightWeaponPayloadStateRepository.cpp" />
+    <ClCompile Include="ZHLightWeaponPayload\CtRefZHLightWeaponPayload.cpp" />
+    <ClCompile Include="ZHLightWeaponPayload\CtRefZHLightWeaponPayloadList.cpp" />
+    <ClCompile Include="zhradarresult\CtZHRadarResultObjDec.cpp" />
+    <ClCompile Include="zhradarresult\CtZHRadarResultObjEnc.cpp" />
+    <ClCompile Include="zhradarresult\CtZHRadarResultPublisher.cpp" />
+    <ClCompile Include="zhradarresult\CtZHRadarResultStateRepository.cpp" />
+    <ClCompile Include="zhradarresult\CtRefZHRadarResult.cpp" />
+    <ClCompile Include="zhradarresult\CtRefZHRadarResultList.cpp" />
+    <ClCompile Include="ZHWeaponLoadInfo\CtZHWeaponLoadInfoObjDec.cpp" />
+    <ClCompile Include="ZHWeaponLoadInfo\CtZHWeaponLoadInfoObjEnc.cpp" />
+    <ClCompile Include="ZHWeaponLoadInfo\CtZHWeaponLoadInfoPublisher.cpp" />
+    <ClCompile Include="ZHWeaponLoadInfo\CtZHWeaponLoadInfoStateRepository.cpp" />
+    <ClCompile Include="ZHWeaponLoadInfo\CtRefZHWeaponLoadInfo.cpp" />
+    <ClCompile Include="ZHWeaponLoadInfo\CtRefZHWeaponLoadInfoList.cpp" />
     <ClCompile Include="EventBridge.cpp" />
     <ClCompile Include="ExportAPI.cpp" />
     <ClCompile Include="VRLinkManager.cpp" />
@@ -121,7 +255,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;_DEBUG;JTBRIDGE_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;JTBRIDGE_EXPORTS;_WINDOWS;_USRDLL;BUILDING_MAKEXTEND_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
@@ -138,7 +272,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;NDEBUG;JTBRIDGE_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;JTBRIDGE_EXPORTS;_WINDOWS;_USRDLL;BUILDING_MAKEXTEND_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
@@ -153,7 +287,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;JTBRIDGE_EXPORTS;_WINDOWS;_USRDLL;DtHLA;RTI_USES_STD_FSTREAM;MAK_DYNAMIC_LIBRARY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;JTBRIDGE_EXPORTS;_WINDOWS;_USRDLL;DtHLA;RTI_USES_STD_FSTREAM;MAK_DYNAMIC_LIBRARY;BUILDING_MAKEXTEND_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
@@ -180,7 +314,7 @@ matrixd.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>NDEBUG;JTBRIDGE_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>NDEBUG;JTBRIDGE_EXPORTS;_WINDOWS;_USRDLL;BUILDING_MAKEXTEND_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>

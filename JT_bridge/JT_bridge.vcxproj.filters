@@ -25,6 +25,54 @@
     <Filter Include="源文件\interaction">
       <UniqueIdentifier>{e20c4a46-aaf3-477a-a87f-73e93849558f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\interaction\jamInter">
+      <UniqueIdentifier>{f1a2b3c4-d5e6-7890-abcd-ef1234567890}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\interaction\jamInter">
+      <UniqueIdentifier>{a1b2c3d4-e5f6-7890-abcd-ef1234567891}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\interaction\passiveJammerInter">
+      <UniqueIdentifier>{b2c3d4e5-f6a7-8901-bcde-f12345678902}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\interaction\passiveJammerInter">
+      <UniqueIdentifier>{c3d4e5f6-a7b8-9012-cdef-123456789013}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\interaction\weatherinit">
+      <UniqueIdentifier>{d4e5f6a7-b8c9-0123-def0-234567890124}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\interaction\weatherinit">
+      <UniqueIdentifier>{e5f6a7b8-c9d0-1234-ef01-234567890135}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\interaction\weatherresultinter">
+      <UniqueIdentifier>{f6a7b8c9-d0e1-2345-f012-345678901246}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\interaction\weatherresultinter">
+      <UniqueIdentifier>{a7b8c9d0-e1f2-3456-7890-123456789057}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\interaction\ZHAircraftSimulatorConfigInter">
+      <UniqueIdentifier>{b8c9d0e1-f2a3-4567-8901-234567890168}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\interaction\ZHAircraftSimulatorConfigInter">
+      <UniqueIdentifier>{c9d0e1f2-a3b4-5678-9012-345678901279}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\interaction\zhradarinter">
+      <UniqueIdentifier>{d0e1f2a3-b4c5-6789-0123-456789012380}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\interaction\zhradarinter">
+      <UniqueIdentifier>{e1f2a3b4-c5d6-7890-1234-567890123491}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\interaction\ZHLightWeaponDamageInter">
+      <UniqueIdentifier>{f2a3b4c5-d6e7-8901-2345-678901234502}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\interaction\ZHLightWeaponDamageInter">
+      <UniqueIdentifier>{a3b4c5d6-e7f8-9012-3456-789012345613}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\interaction\ZHLightWeaponExplodeInter">
+      <UniqueIdentifier>{b4c5d6e7-f8a9-0123-4567-890123456724}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\interaction\ZHLightWeaponExplodeInter">
+      <UniqueIdentifier>{c5d6e7f8-a9b0-1234-5678-901234567835}</UniqueIdentifier>
+    </Filter>
     <Filter Include="头文件\object\Jammer">
       <UniqueIdentifier>{2af4530f-5b26-4589-995a-cef09f88b6d2}</UniqueIdentifier>
     </Filter>
@@ -37,11 +85,41 @@
     <Filter Include="源文件\object\PassiveJammer">
       <UniqueIdentifier>{b2c3d4e5-f6a7-8901-bcde-f12345678901}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\object\ZHAircraftEntity">
+      <UniqueIdentifier>{e5f6a7b8-c9d0-1234-ef01-234567890123}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\object\ZHAircraftEntity">
+      <UniqueIdentifier>{f6a7b8c9-d0e1-2345-f012-345678901234}</UniqueIdentifier>
+    </Filter>
     <Filter Include="头文件\callbacks">
       <UniqueIdentifier>{c3d4e5f6-a7b8-9012-cdef-123456789012}</UniqueIdentifier>
     </Filter>
     <Filter Include="源文件\callbacks">
       <UniqueIdentifier>{d4e5f6a7-b8c9-0123-def0-234567890123}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\object\ZHRadar">
+      <UniqueIdentifier>{a1b2c3d4-e5f6-7890-abcd-ef1234567891}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\object\ZHRadar">
+      <UniqueIdentifier>{b2c3d4e5-f6a7-8901-bcde-f12345678902}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\object\ZHLightWeaponPayload">
+      <UniqueIdentifier>{c3d4e5f6-a7b8-9012-cdef-123456789013}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\object\ZHLightWeaponPayload">
+      <UniqueIdentifier>{d4e5f6a7-b8c9-0123-def0-234567890124}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\object\ZHRadarResult">
+      <UniqueIdentifier>{e5f6a7b8-c9d0-1234-ef01-234567890135}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\object\ZHRadarResult">
+      <UniqueIdentifier>{f6a7b8c9-d0e1-2345-f012-345678901246}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\object\ZHWeaponLoadInfo">
+      <UniqueIdentifier>{a7b8c9d0-e1f2-3456-7890-123456789057}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\object\ZHWeaponLoadInfo">
+      <UniqueIdentifier>{b8c9d0e1-f2a3-4567-8901-234567890168}</UniqueIdentifier>
     </Filter>
     <Filter Include="VRLink">
       <UniqueIdentifier>{96e6d1a1-0b0d-4e38-9ee7-b110681cbdff}</UniqueIdentifier>
@@ -75,6 +153,78 @@
     <ClInclude Include="jammer\CtIJammerPublisher.h">
       <Filter>头文件\object\Jammer</Filter>
     </ClInclude>
+    <ClInclude Include="jamInter\CtIJammerinteraction.h">
+      <Filter>头文件\interaction\jamInter</Filter>
+    </ClInclude>
+    <ClInclude Include="jamInter\CtIJammerIntEnc.h">
+      <Filter>头文件\interaction\jamInter</Filter>
+    </ClInclude>
+    <ClInclude Include="jamInter\CtIJammerIntDec.h">
+      <Filter>头文件\interaction\jamInter</Filter>
+    </ClInclude>
+    <ClInclude Include="passiveJammerInter\CtIPassiveJammerinteraction.h">
+      <Filter>头文件\interaction\passiveJammerInter</Filter>
+    </ClInclude>
+    <ClInclude Include="passiveJammerInter\CtIPassiveJammerIntEnc.h">
+      <Filter>头文件\interaction\passiveJammerInter</Filter>
+    </ClInclude>
+    <ClInclude Include="passiveJammerInter\CtIPassiveJammerIntDec.h">
+      <Filter>头文件\interaction\passiveJammerInter</Filter>
+    </ClInclude>
+    <ClInclude Include="weatherinit\CtIWeatherInitinteraction.h">
+      <Filter>头文件\interaction\weatherinit</Filter>
+    </ClInclude>
+    <ClInclude Include="weatherinit\CtIWeatherInitIntEnc.h">
+      <Filter>头文件\interaction\weatherinit</Filter>
+    </ClInclude>
+    <ClInclude Include="weatherinit\CtIWeatherInitIntDec.h">
+      <Filter>头文件\interaction\weatherinit</Filter>
+    </ClInclude>
+    <ClInclude Include="weatherresultinter\CtIWeatherResultsinteraction.h">
+      <Filter>头文件\interaction\weatherresultinter</Filter>
+    </ClInclude>
+    <ClInclude Include="weatherresultinter\CtIWeatherResultsIntEnc.h">
+      <Filter>头文件\interaction\weatherresultinter</Filter>
+    </ClInclude>
+    <ClInclude Include="weatherresultinter\CtIWeatherResultsIntDec.h">
+      <Filter>头文件\interaction\weatherresultinter</Filter>
+    </ClInclude>
+    <ClInclude Include="ZHAircraftSimulatorConfigInter\CtZHAircraftSimulatorConfigReqinteraction.h">
+      <Filter>头文件\interaction\ZHAircraftSimulatorConfigInter</Filter>
+    </ClInclude>
+    <ClInclude Include="ZHAircraftSimulatorConfigInter\CtZHAircraftSimulatorConfigReqIntEnc.h">
+      <Filter>头文件\interaction\ZHAircraftSimulatorConfigInter</Filter>
+    </ClInclude>
+    <ClInclude Include="ZHAircraftSimulatorConfigInter\CtZHAircraftSimulatorConfigReqIntDec.h">
+      <Filter>头文件\interaction\ZHAircraftSimulatorConfigInter</Filter>
+    </ClInclude>
+    <ClInclude Include="zhradarinter\CtZHRadarReqinteraction.h">
+      <Filter>头文件\interaction\zhradarinter</Filter>
+    </ClInclude>
+    <ClInclude Include="zhradarinter\CtZHRadarReqIntEnc.h">
+      <Filter>头文件\interaction\zhradarinter</Filter>
+    </ClInclude>
+    <ClInclude Include="zhradarinter\CtZHRadarReqIntDec.h">
+      <Filter>头文件\interaction\zhradarinter</Filter>
+    </ClInclude>
+    <ClInclude Include="ZHLightWeaponDamageInter\CtZHLightWeaponDamageReqinteraction.h">
+      <Filter>头文件\interaction\ZHLightWeaponDamageInter</Filter>
+    </ClInclude>
+    <ClInclude Include="ZHLightWeaponDamageInter\CtZHLightWeaponDamageReqIntEnc.h">
+      <Filter>头文件\interaction\ZHLightWeaponDamageInter</Filter>
+    </ClInclude>
+    <ClInclude Include="ZHLightWeaponDamageInter\CtZHLightWeaponDamageReqIntDec.h">
+      <Filter>头文件\interaction\ZHLightWeaponDamageInter</Filter>
+    </ClInclude>
+    <ClInclude Include="ZHLightWeaponExplodeInter\CtZHLightWeaponExplodeReqinteraction.h">
+      <Filter>头文件\interaction\ZHLightWeaponExplodeInter</Filter>
+    </ClInclude>
+    <ClInclude Include="ZHLightWeaponExplodeInter\CtZHLightWeaponExplodeReqIntEnc.h">
+      <Filter>头文件\interaction\ZHLightWeaponExplodeInter</Filter>
+    </ClInclude>
+    <ClInclude Include="ZHLightWeaponExplodeInter\CtZHLightWeaponExplodeReqIntDec.h">
+      <Filter>头文件\interaction\ZHLightWeaponExplodeInter</Filter>
+    </ClInclude>
     <ClInclude Include="resource.h">
       <Filter>头文件</Filter>
     </ClInclude>
@@ -82,6 +232,45 @@
       <Filter>头文件\callbacks</Filter>
     </ClInclude>
     <ClInclude Include="callbacks\PassiveJammerCallbacks.h">
+      <Filter>头文件\callbacks</Filter>
+    </ClInclude>
+    <ClInclude Include="callbacks\ZHAircraftEntityCallbacks.h">
+      <Filter>头文件\callbacks</Filter>
+    </ClInclude>
+    <ClInclude Include="callbacks\ZHRadarCallbacks.h">
+      <Filter>头文件\callbacks</Filter>
+    </ClInclude>
+    <ClInclude Include="callbacks\ZHLightWeaponPayloadCallbacks.h">
+      <Filter>头文件\callbacks</Filter>
+    </ClInclude>
+    <ClInclude Include="callbacks\ZHRadarResultCallbacks.h">
+      <Filter>头文件\callbacks</Filter>
+    </ClInclude>
+    <ClInclude Include="callbacks\ZHWeaponLoadInfoCallbacks.h">
+      <Filter>头文件\callbacks</Filter>
+    </ClInclude>
+    <ClInclude Include="callbacks\JammerInteractionCallbacks.h">
+      <Filter>头文件\callbacks</Filter>
+    </ClInclude>
+    <ClInclude Include="callbacks\PassiveJammerInteractionCallbacks.h">
+      <Filter>头文件\callbacks</Filter>
+    </ClInclude>
+    <ClInclude Include="callbacks\WeatherInitInteractionCallbacks.h">
+      <Filter>头文件\callbacks</Filter>
+    </ClInclude>
+    <ClInclude Include="callbacks\WeatherResultInteractionCallbacks.h">
+      <Filter>头文件\callbacks</Filter>
+    </ClInclude>
+    <ClInclude Include="callbacks\ZHAircraftSimulatorConfigInteractionCallbacks.h">
+      <Filter>头文件\callbacks</Filter>
+    </ClInclude>
+    <ClInclude Include="callbacks\ZHRadarReqInteractionCallbacks.h">
+      <Filter>头文件\callbacks</Filter>
+    </ClInclude>
+    <ClInclude Include="callbacks\ZHLightWeaponDamageInteractionCallbacks.h">
+      <Filter>头文件\callbacks</Filter>
+    </ClInclude>
+    <ClInclude Include="callbacks\ZHLightWeaponExplodeInteractionCallbacks.h">
       <Filter>头文件\callbacks</Filter>
     </ClInclude>
     <ClInclude Include="passiveJammer\CtIPassiveJammerObjDec.h">
@@ -101,6 +290,96 @@
     </ClInclude>
     <ClInclude Include="passiveJammer\CtRefIPassiveJammerList.h">
       <Filter>头文件\object\PassiveJammer</Filter>
+    </ClInclude>
+    <ClInclude Include="ZHAircraftEntity\CtZHAircraftEntityObjDec.h">
+      <Filter>头文件\object\ZHAircraftEntity</Filter>
+    </ClInclude>
+    <ClInclude Include="ZHAircraftEntity\CtZHAircraftEntityObjEnc.h">
+      <Filter>头文件\object\ZHAircraftEntity</Filter>
+    </ClInclude>
+    <ClInclude Include="ZHAircraftEntity\CtZHAircraftEntityPublisher.h">
+      <Filter>头文件\object\ZHAircraftEntity</Filter>
+    </ClInclude>
+    <ClInclude Include="ZHAircraftEntity\CtRefZHAircraftEntity.h">
+      <Filter>头文件\object\ZHAircraftEntity</Filter>
+    </ClInclude>
+    <ClInclude Include="ZHAircraftEntity\CtRefZHAircraftEntityList.h">
+      <Filter>头文件\object\ZHAircraftEntity</Filter>
+    </ClInclude>
+    <ClInclude Include="ZHAircraftEntity\CtZHAircraftEntityStateRepository.h">
+      <Filter>头文件\object\ZHAircraftEntity</Filter>
+    </ClInclude>
+    <ClInclude Include="zhradar\CtZHRadarObjDec.h">
+      <Filter>头文件\object\ZHRadar</Filter>
+    </ClInclude>
+    <ClInclude Include="zhradar\CtZHRadarObjEnc.h">
+      <Filter>头文件\object\ZHRadar</Filter>
+    </ClInclude>
+    <ClInclude Include="zhradar\CtZHRadarPublisher.h">
+      <Filter>头文件\object\ZHRadar</Filter>
+    </ClInclude>
+    <ClInclude Include="zhradar\CtZHRadarStateRepository.h">
+      <Filter>头文件\object\ZHRadar</Filter>
+    </ClInclude>
+    <ClInclude Include="zhradar\CtRefZHRadar.h">
+      <Filter>头文件\object\ZHRadar</Filter>
+    </ClInclude>
+    <ClInclude Include="zhradar\CtRefZHRadarList.h">
+      <Filter>头文件\object\ZHRadar</Filter>
+    </ClInclude>
+    <ClInclude Include="ZHLightWeaponPayload\CtZHLightWeaponPayloadObjDec.h">
+      <Filter>头文件\object\ZHLightWeaponPayload</Filter>
+    </ClInclude>
+    <ClInclude Include="ZHLightWeaponPayload\CtZHLightWeaponPayloadObjEnc.h">
+      <Filter>头文件\object\ZHLightWeaponPayload</Filter>
+    </ClInclude>
+    <ClInclude Include="ZHLightWeaponPayload\CtZHLightWeaponPayloadPublisher.h">
+      <Filter>头文件\object\ZHLightWeaponPayload</Filter>
+    </ClInclude>
+    <ClInclude Include="ZHLightWeaponPayload\CtZHLightWeaponPayloadStateRepository.h">
+      <Filter>头文件\object\ZHLightWeaponPayload</Filter>
+    </ClInclude>
+    <ClInclude Include="ZHLightWeaponPayload\CtRefZHLightWeaponPayload.h">
+      <Filter>头文件\object\ZHLightWeaponPayload</Filter>
+    </ClInclude>
+    <ClInclude Include="ZHLightWeaponPayload\CtRefZHLightWeaponPayloadList.h">
+      <Filter>头文件\object\ZHLightWeaponPayload</Filter>
+    </ClInclude>
+    <ClInclude Include="zhradarresult\CtZHRadarResultObjDec.h">
+      <Filter>头文件\object\ZHRadarResult</Filter>
+    </ClInclude>
+    <ClInclude Include="zhradarresult\CtZHRadarResultObjEnc.h">
+      <Filter>头文件\object\ZHRadarResult</Filter>
+    </ClInclude>
+    <ClInclude Include="zhradarresult\CtZHRadarResultPublisher.h">
+      <Filter>头文件\object\ZHRadarResult</Filter>
+    </ClInclude>
+    <ClInclude Include="zhradarresult\CtZHRadarResultStateRepository.h">
+      <Filter>头文件\object\ZHRadarResult</Filter>
+    </ClInclude>
+    <ClInclude Include="zhradarresult\CtRefZHRadarResult.h">
+      <Filter>头文件\object\ZHRadarResult</Filter>
+    </ClInclude>
+    <ClInclude Include="zhradarresult\CtRefZHRadarResultList.h">
+      <Filter>头文件\object\ZHRadarResult</Filter>
+    </ClInclude>
+    <ClInclude Include="ZHWeaponLoadInfo\CtZHWeaponLoadInfoObjDec.h">
+      <Filter>头文件\object\ZHWeaponLoadInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="ZHWeaponLoadInfo\CtZHWeaponLoadInfoObjEnc.h">
+      <Filter>头文件\object\ZHWeaponLoadInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="ZHWeaponLoadInfo\CtZHWeaponLoadInfoPublisher.h">
+      <Filter>头文件\object\ZHWeaponLoadInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="ZHWeaponLoadInfo\CtZHWeaponLoadInfoStateRepository.h">
+      <Filter>头文件\object\ZHWeaponLoadInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="ZHWeaponLoadInfo\CtRefZHWeaponLoadInfo.h">
+      <Filter>头文件\object\ZHWeaponLoadInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="ZHWeaponLoadInfo\CtRefZHWeaponLoadInfoList.h">
+      <Filter>头文件\object\ZHWeaponLoadInfo</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -134,10 +413,121 @@
     <ClCompile Include="jammer\VRLinkUtilStub.cpp">
       <Filter>源文件\object\Jammer</Filter>
     </ClCompile>
+    <ClCompile Include="jamInter\CtIJammerinteraction.cpp">
+      <Filter>源文件\interaction\jamInter</Filter>
+    </ClCompile>
+    <ClCompile Include="jamInter\CtIJammerIntEnc.cpp">
+      <Filter>源文件\interaction\jamInter</Filter>
+    </ClCompile>
+    <ClCompile Include="jamInter\CtIJammerIntDec.cpp">
+      <Filter>源文件\interaction\jamInter</Filter>
+    </ClCompile>
+    <ClCompile Include="passiveJammerInter\CtIPassiveJammerinteraction.cpp">
+      <Filter>源文件\interaction\passiveJammerInter</Filter>
+    </ClCompile>
+    <ClCompile Include="passiveJammerInter\CtIPassiveJammerIntEnc.cpp">
+      <Filter>源文件\interaction\passiveJammerInter</Filter>
+    </ClCompile>
+    <ClCompile Include="passiveJammerInter\CtIPassiveJammerIntDec.cpp">
+      <Filter>源文件\interaction\passiveJammerInter</Filter>
+    </ClCompile>
+    <ClCompile Include="weatherinit\CtIWeatherInitinteraction.cpp">
+      <Filter>源文件\interaction\weatherinit</Filter>
+    </ClCompile>
+    <ClCompile Include="weatherinit\CtIWeatherInitIntEnc.cpp">
+      <Filter>源文件\interaction\weatherinit</Filter>
+    </ClCompile>
+    <ClCompile Include="weatherinit\CtIWeatherInitIntDec.cpp">
+      <Filter>源文件\interaction\weatherinit</Filter>
+    </ClCompile>
+    <ClCompile Include="weatherresultinter\CtIWeatherResultsinteraction.cpp">
+      <Filter>源文件\interaction\weatherresultinter</Filter>
+    </ClCompile>
+    <ClCompile Include="weatherresultinter\CtIWeatherResultsIntEnc.cpp">
+      <Filter>源文件\interaction\weatherresultinter</Filter>
+    </ClCompile>
+    <ClCompile Include="weatherresultinter\CtIWeatherResultsIntDec.cpp">
+      <Filter>源文件\interaction\weatherresultinter</Filter>
+    </ClCompile>
+    <ClCompile Include="ZHAircraftSimulatorConfigInter\CtZHAircraftSimulatorConfigReqinteraction.cpp">
+      <Filter>源文件\interaction\ZHAircraftSimulatorConfigInter</Filter>
+    </ClCompile>
+    <ClCompile Include="ZHAircraftSimulatorConfigInter\CtZHAircraftSimulatorConfigReqIntEnc.cpp">
+      <Filter>源文件\interaction\ZHAircraftSimulatorConfigInter</Filter>
+    </ClCompile>
+    <ClCompile Include="ZHAircraftSimulatorConfigInter\CtZHAircraftSimulatorConfigReqIntDec.cpp">
+      <Filter>源文件\interaction\ZHAircraftSimulatorConfigInter</Filter>
+    </ClCompile>
+    <ClCompile Include="zhradarinter\CtZHRadarReqinteraction.cpp">
+      <Filter>源文件\interaction\zhradarinter</Filter>
+    </ClCompile>
+    <ClCompile Include="zhradarinter\CtZHRadarReqIntEnc.cpp">
+      <Filter>源文件\interaction\zhradarinter</Filter>
+    </ClCompile>
+    <ClCompile Include="zhradarinter\CtZHRadarReqIntDec.cpp">
+      <Filter>源文件\interaction\zhradarinter</Filter>
+    </ClCompile>
+    <ClCompile Include="ZHLightWeaponDamageInter\CtZHLightWeaponDamageReqinteraction.cpp">
+      <Filter>源文件\interaction\ZHLightWeaponDamageInter</Filter>
+    </ClCompile>
+    <ClCompile Include="ZHLightWeaponDamageInter\CtZHLightWeaponDamageReqIntEnc.cpp">
+      <Filter>源文件\interaction\ZHLightWeaponDamageInter</Filter>
+    </ClCompile>
+    <ClCompile Include="ZHLightWeaponDamageInter\CtZHLightWeaponDamageReqIntDec.cpp">
+      <Filter>源文件\interaction\ZHLightWeaponDamageInter</Filter>
+    </ClCompile>
+    <ClCompile Include="ZHLightWeaponExplodeInter\CtZHLightWeaponExplodeReqinteraction.cpp">
+      <Filter>源文件\interaction\ZHLightWeaponExplodeInter</Filter>
+    </ClCompile>
+    <ClCompile Include="ZHLightWeaponExplodeInter\CtZHLightWeaponExplodeReqIntEnc.cpp">
+      <Filter>源文件\interaction\ZHLightWeaponExplodeInter</Filter>
+    </ClCompile>
+    <ClCompile Include="ZHLightWeaponExplodeInter\CtZHLightWeaponExplodeReqIntDec.cpp">
+      <Filter>源文件\interaction\ZHLightWeaponExplodeInter</Filter>
+    </ClCompile>
     <ClCompile Include="callbacks\JammerCallbacks.cpp">
       <Filter>源文件\callbacks</Filter>
     </ClCompile>
     <ClCompile Include="callbacks\PassiveJammerCallbacks.cpp">
+      <Filter>源文件\callbacks</Filter>
+    </ClCompile>
+    <ClCompile Include="callbacks\ZHAircraftEntityCallbacks.cpp">
+      <Filter>源文件\callbacks</Filter>
+    </ClCompile>
+    <ClCompile Include="callbacks\ZHRadarCallbacks.cpp">
+      <Filter>源文件\callbacks</Filter>
+    </ClCompile>
+    <ClCompile Include="callbacks\ZHLightWeaponPayloadCallbacks.cpp">
+      <Filter>源文件\callbacks</Filter>
+    </ClCompile>
+    <ClCompile Include="callbacks\ZHRadarResultCallbacks.cpp">
+      <Filter>源文件\callbacks</Filter>
+    </ClCompile>
+    <ClCompile Include="callbacks\ZHWeaponLoadInfoCallbacks.cpp">
+      <Filter>源文件\callbacks</Filter>
+    </ClCompile>
+    <ClCompile Include="callbacks\JammerInteractionCallbacks.cpp">
+      <Filter>源文件\callbacks</Filter>
+    </ClCompile>
+    <ClCompile Include="callbacks\PassiveJammerInteractionCallbacks.cpp">
+      <Filter>源文件\callbacks</Filter>
+    </ClCompile>
+    <ClCompile Include="callbacks\WeatherInitInteractionCallbacks.cpp">
+      <Filter>源文件\callbacks</Filter>
+    </ClCompile>
+    <ClCompile Include="callbacks\WeatherResultInteractionCallbacks.cpp">
+      <Filter>源文件\callbacks</Filter>
+    </ClCompile>
+    <ClCompile Include="callbacks\ZHAircraftSimulatorConfigInteractionCallbacks.cpp">
+      <Filter>源文件\callbacks</Filter>
+    </ClCompile>
+    <ClCompile Include="callbacks\ZHRadarReqInteractionCallbacks.cpp">
+      <Filter>源文件\callbacks</Filter>
+    </ClCompile>
+    <ClCompile Include="callbacks\ZHLightWeaponDamageInteractionCallbacks.cpp">
+      <Filter>源文件\callbacks</Filter>
+    </ClCompile>
+    <ClCompile Include="callbacks\ZHLightWeaponExplodeInteractionCallbacks.cpp">
       <Filter>源文件\callbacks</Filter>
     </ClCompile>
     <ClCompile Include="passiveJammer\CtIPassiveJammerObjDec.cpp">
@@ -157,6 +547,96 @@
     </ClCompile>
     <ClCompile Include="passiveJammer\CtRefIPassiveJammerList.cpp">
       <Filter>源文件\object\PassiveJammer</Filter>
+    </ClCompile>
+    <ClCompile Include="ZHAircraftEntity\CtZHAircraftEntityObjDec.cpp">
+      <Filter>源文件\object\ZHAircraftEntity</Filter>
+    </ClCompile>
+    <ClCompile Include="ZHAircraftEntity\CtZHAircraftEntityObjEnc.cpp">
+      <Filter>源文件\object\ZHAircraftEntity</Filter>
+    </ClCompile>
+    <ClCompile Include="ZHAircraftEntity\CtZHAircraftEntityPublisher.cpp">
+      <Filter>源文件\object\ZHAircraftEntity</Filter>
+    </ClCompile>
+    <ClCompile Include="ZHAircraftEntity\CtRefZHAircraftEntity.cpp">
+      <Filter>源文件\object\ZHAircraftEntity</Filter>
+    </ClCompile>
+    <ClCompile Include="ZHAircraftEntity\CtRefZHAircraftEntityList.cpp">
+      <Filter>源文件\object\ZHAircraftEntity</Filter>
+    </ClCompile>
+    <ClCompile Include="ZHAircraftEntity\CtZHAircraftEntityStateRepository.cpp">
+      <Filter>源文件\object\ZHAircraftEntity</Filter>
+    </ClCompile>
+    <ClCompile Include="zhradar\CtZHRadarObjDec.cpp">
+      <Filter>源文件\object\ZHRadar</Filter>
+    </ClCompile>
+    <ClCompile Include="zhradar\CtZHRadarObjEnc.cpp">
+      <Filter>源文件\object\ZHRadar</Filter>
+    </ClCompile>
+    <ClCompile Include="zhradar\CtZHRadarPublisher.cpp">
+      <Filter>源文件\object\ZHRadar</Filter>
+    </ClCompile>
+    <ClCompile Include="zhradar\CtZHRadarStateRepository.cpp">
+      <Filter>源文件\object\ZHRadar</Filter>
+    </ClCompile>
+    <ClCompile Include="zhradar\CtRefZHRadar.cpp">
+      <Filter>源文件\object\ZHRadar</Filter>
+    </ClCompile>
+    <ClCompile Include="zhradar\CtRefZHRadarList.cpp">
+      <Filter>源文件\object\ZHRadar</Filter>
+    </ClCompile>
+    <ClCompile Include="ZHLightWeaponPayload\CtZHLightWeaponPayloadObjDec.cpp">
+      <Filter>源文件\object\ZHLightWeaponPayload</Filter>
+    </ClCompile>
+    <ClCompile Include="ZHLightWeaponPayload\CtZHLightWeaponPayloadObjEnc.cpp">
+      <Filter>源文件\object\ZHLightWeaponPayload</Filter>
+    </ClCompile>
+    <ClCompile Include="ZHLightWeaponPayload\CtZHLightWeaponPayloadPublisher.cpp">
+      <Filter>源文件\object\ZHLightWeaponPayload</Filter>
+    </ClCompile>
+    <ClCompile Include="ZHLightWeaponPayload\CtZHLightWeaponPayloadStateRepository.cpp">
+      <Filter>源文件\object\ZHLightWeaponPayload</Filter>
+    </ClCompile>
+    <ClCompile Include="ZHLightWeaponPayload\CtRefZHLightWeaponPayload.cpp">
+      <Filter>源文件\object\ZHLightWeaponPayload</Filter>
+    </ClCompile>
+    <ClCompile Include="ZHLightWeaponPayload\CtRefZHLightWeaponPayloadList.cpp">
+      <Filter>源文件\object\ZHLightWeaponPayload</Filter>
+    </ClCompile>
+    <ClCompile Include="zhradarresult\CtZHRadarResultObjDec.cpp">
+      <Filter>源文件\object\ZHRadarResult</Filter>
+    </ClCompile>
+    <ClCompile Include="zhradarresult\CtZHRadarResultObjEnc.cpp">
+      <Filter>源文件\object\ZHRadarResult</Filter>
+    </ClCompile>
+    <ClCompile Include="zhradarresult\CtZHRadarResultPublisher.cpp">
+      <Filter>源文件\object\ZHRadarResult</Filter>
+    </ClCompile>
+    <ClCompile Include="zhradarresult\CtZHRadarResultStateRepository.cpp">
+      <Filter>源文件\object\ZHRadarResult</Filter>
+    </ClCompile>
+    <ClCompile Include="zhradarresult\CtRefZHRadarResult.cpp">
+      <Filter>源文件\object\ZHRadarResult</Filter>
+    </ClCompile>
+    <ClCompile Include="zhradarresult\CtRefZHRadarResultList.cpp">
+      <Filter>源文件\object\ZHRadarResult</Filter>
+    </ClCompile>
+    <ClCompile Include="ZHWeaponLoadInfo\CtZHWeaponLoadInfoObjDec.cpp">
+      <Filter>源文件\object\ZHWeaponLoadInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="ZHWeaponLoadInfo\CtZHWeaponLoadInfoObjEnc.cpp">
+      <Filter>源文件\object\ZHWeaponLoadInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="ZHWeaponLoadInfo\CtZHWeaponLoadInfoPublisher.cpp">
+      <Filter>源文件\object\ZHWeaponLoadInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="ZHWeaponLoadInfo\CtZHWeaponLoadInfoStateRepository.cpp">
+      <Filter>源文件\object\ZHWeaponLoadInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="ZHWeaponLoadInfo\CtRefZHWeaponLoadInfo.cpp">
+      <Filter>源文件\object\ZHWeaponLoadInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="ZHWeaponLoadInfo\CtRefZHWeaponLoadInfoList.cpp">
+      <Filter>源文件\object\ZHWeaponLoadInfo</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
