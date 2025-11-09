@@ -19,18 +19,28 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="callbacks\JammerCallbacks.h" />
+    <ClInclude Include="callbacks\PassiveJammerCallbacks.h" />
     <ClInclude Include="jammer\CtIJammerObjDec.h" />
     <ClInclude Include="jammer\CtIJammerObjEnc.h" />
     <ClInclude Include="jammer\CtIJammerPublisher.h" />
     <ClInclude Include="jammer\CtIJammerStateRepository.h" />
     <ClInclude Include="jammer\CtRefIJammer.h" />
     <ClInclude Include="jammer\CtRefIJammerList.h" />
+    <ClInclude Include="passiveJammer\CtIPassiveJammerObjDec.h" />
+    <ClInclude Include="passiveJammer\CtIPassiveJammerObjEnc.h" />
+    <ClInclude Include="passiveJammer\CtIPassiveJammerPublisher.h" />
+    <ClInclude Include="passiveJammer\CtIPassiveJammerStateRepository.h" />
+    <ClInclude Include="passiveJammer\CtRefIPassiveJammer.h" />
+    <ClInclude Include="passiveJammer\CtRefIPassiveJammerList.h" />
     <ClInclude Include="EventBridge.h" />
     <ClInclude Include="ExportAPI.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="VRLinkManager.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="callbacks\JammerCallbacks.cpp" />
+    <ClCompile Include="callbacks\PassiveJammerCallbacks.cpp" />
     <ClCompile Include="jammer\CtIJammerObjDec.cpp" />
     <ClCompile Include="jammer\CtIJammerObjEnc.cpp" />
     <ClCompile Include="jammer\CtIJammerPublisher.cpp" />
@@ -38,6 +48,12 @@
     <ClCompile Include="jammer\CtRefIJammer.cpp" />
     <ClCompile Include="jammer\CtRefIJammerList.cpp" />
     <ClCompile Include="jammer\VRLinkUtilStub.cpp" />
+    <ClCompile Include="passiveJammer\CtIPassiveJammerObjDec.cpp" />
+    <ClCompile Include="passiveJammer\CtIPassiveJammerObjEnc.cpp" />
+    <ClCompile Include="passiveJammer\CtIPassiveJammerPublisher.cpp" />
+    <ClCompile Include="passiveJammer\CtIPassiveJammerStateRepository.cpp" />
+    <ClCompile Include="passiveJammer\CtRefIPassiveJammer.cpp" />
+    <ClCompile Include="passiveJammer\CtRefIPassiveJammerList.cpp" />
     <ClCompile Include="EventBridge.cpp" />
     <ClCompile Include="ExportAPI.cpp" />
     <ClCompile Include="VRLinkManager.cpp" />

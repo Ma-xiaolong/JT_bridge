@@ -38,6 +38,9 @@ build/
 *.bak
 *.dmp
 
+//把文档忽略
+*.md
+
 # 自动生成文件夹（你的 VR-Link 工程）
 jammer/
 jamInter/

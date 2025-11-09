@@ -31,6 +31,18 @@
     <Filter Include="源文件\object\Jammer">
       <UniqueIdentifier>{c73872ac-bd83-4104-84bd-51376403193e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\object\PassiveJammer">
+      <UniqueIdentifier>{a1b2c3d4-e5f6-7890-abcd-ef1234567890}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\object\PassiveJammer">
+      <UniqueIdentifier>{b2c3d4e5-f6a7-8901-bcde-f12345678901}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\callbacks">
+      <UniqueIdentifier>{c3d4e5f6-a7b8-9012-cdef-123456789012}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\callbacks">
+      <UniqueIdentifier>{d4e5f6a7-b8c9-0123-def0-234567890123}</UniqueIdentifier>
+    </Filter>
     <Filter Include="VRLink">
       <UniqueIdentifier>{96e6d1a1-0b0d-4e38-9ee7-b110681cbdff}</UniqueIdentifier>
     </Filter>
@@ -66,6 +78,30 @@
     <ClInclude Include="resource.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="callbacks\JammerCallbacks.h">
+      <Filter>头文件\callbacks</Filter>
+    </ClInclude>
+    <ClInclude Include="callbacks\PassiveJammerCallbacks.h">
+      <Filter>头文件\callbacks</Filter>
+    </ClInclude>
+    <ClInclude Include="passiveJammer\CtIPassiveJammerObjDec.h">
+      <Filter>头文件\object\PassiveJammer</Filter>
+    </ClInclude>
+    <ClInclude Include="passiveJammer\CtIPassiveJammerObjEnc.h">
+      <Filter>头文件\object\PassiveJammer</Filter>
+    </ClInclude>
+    <ClInclude Include="passiveJammer\CtIPassiveJammerPublisher.h">
+      <Filter>头文件\object\PassiveJammer</Filter>
+    </ClInclude>
+    <ClInclude Include="passiveJammer\CtIPassiveJammerStateRepository.h">
+      <Filter>头文件\object\PassiveJammer</Filter>
+    </ClInclude>
+    <ClInclude Include="passiveJammer\CtRefIPassiveJammer.h">
+      <Filter>头文件\object\PassiveJammer</Filter>
+    </ClInclude>
+    <ClInclude Include="passiveJammer\CtRefIPassiveJammerList.h">
+      <Filter>头文件\object\PassiveJammer</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ExportAPI.cpp">
@@ -97,6 +133,30 @@
     </ClCompile>
     <ClCompile Include="jammer\VRLinkUtilStub.cpp">
       <Filter>源文件\object\Jammer</Filter>
+    </ClCompile>
+    <ClCompile Include="callbacks\JammerCallbacks.cpp">
+      <Filter>源文件\callbacks</Filter>
+    </ClCompile>
+    <ClCompile Include="callbacks\PassiveJammerCallbacks.cpp">
+      <Filter>源文件\callbacks</Filter>
+    </ClCompile>
+    <ClCompile Include="passiveJammer\CtIPassiveJammerObjDec.cpp">
+      <Filter>源文件\object\PassiveJammer</Filter>
+    </ClCompile>
+    <ClCompile Include="passiveJammer\CtIPassiveJammerObjEnc.cpp">
+      <Filter>源文件\object\PassiveJammer</Filter>
+    </ClCompile>
+    <ClCompile Include="passiveJammer\CtIPassiveJammerPublisher.cpp">
+      <Filter>源文件\object\PassiveJammer</Filter>
+    </ClCompile>
+    <ClCompile Include="passiveJammer\CtIPassiveJammerStateRepository.cpp">
+      <Filter>源文件\object\PassiveJammer</Filter>
+    </ClCompile>
+    <ClCompile Include="passiveJammer\CtRefIPassiveJammer.cpp">
+      <Filter>源文件\object\PassiveJammer</Filter>
+    </ClCompile>
+    <ClCompile Include="passiveJammer\CtRefIPassiveJammerList.cpp">
+      <Filter>源文件\object\PassiveJammer</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
