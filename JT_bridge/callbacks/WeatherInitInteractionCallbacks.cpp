@@ -20,7 +20,7 @@ void onIWeatherInitInteractionReceived(CtIWeatherInitInteraction* inter, void* u
             << "\"top\":" << inter->top()
             << "}";
         
-        cb("INTERACTION", "IWeatherInit_INTERACTION", "RemoteFederate",
+        cb("IWeatherInit_INTERACTION",
             "", ss.str().c_str());
     }
 }

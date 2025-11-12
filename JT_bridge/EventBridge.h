@@ -1,12 +1,10 @@
 #pragma once
 
-// Í³Ò»ÊÂ¼şÇÅ£ºËùÓĞ¶ÔÏó/½»»¥¶¼Í¨¹ıËü»Øµ÷¸ø Java
+// ç»Ÿä¸€äº‹ä»¶æ¡¥æ¥ï¼Œé€šè¿‡å›è°ƒå‡½æ•°ä¼ é€’äº‹ä»¶ç»™ Java
 typedef void(__stdcall* JavaEventCallback)(
-    const char* category,      // "OBJECT" / "INTERACTION"
     const char* type,          // "JAMMER_DISCOVERED" / "JAMMER_UPDATE" / "JAMMER_REMOVED" / "FIRE_INTERACTION"
-    const char* sourceFed,     // À´Ô´Áª°î³ÉÔ±
-    const char* id,            // ¶ÔÏóID(¶ÔÏóÀà) »ò ´¥·¢ÊµÌåID(½»»¥Àà)
-    const char* jsonPayload    // ÊÂ¼şÔØºÉ(JSON)
+    const char* id,            // å¯¹è±¡ID(å¯¹è±¡ç±») æˆ– äº¤äº’å®ä¾‹ID(äº¤äº’ç±»)
+    const char* jsonPayload    // äº‹ä»¶è½½è·(JSON)
     );
 
 struct EventBridge {

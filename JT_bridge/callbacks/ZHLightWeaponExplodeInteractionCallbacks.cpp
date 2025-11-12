@@ -43,7 +43,7 @@ void onZHLightWeaponExplodeReqInteractionReceived(CtZHLightWeaponExplodeReqInter
         
         ss << "}";
         
-        cb("INTERACTION", "ZHLightWeaponExplodeReq_INTERACTION", "RemoteFederate",
+        cb("ZHLightWeaponExplodeReq_INTERACTION",
             inter->WeaponID().c_str(), ss.str().c_str());
     }
 }

@@ -52,7 +52,7 @@ void onZHRadarReqInteractionReceived(CtZHRadarReqInteraction* inter, void* userD
         
         ss << "}";
         
-        cb("INTERACTION", "ZHRadarReq_INTERACTION", "RemoteFederate",
+        cb("ZHRadarReq_INTERACTION",
             inter->RadarID().c_str(), ss.str().c_str());
     }
 }

@@ -39,7 +39,7 @@ void onZHAircraftSimulatorConfigReqInteractionReceived(CtZHAircraftSimulatorConf
         
         ss << "}";
         
-        cb("INTERACTION", "ZHAircraftSimulatorConfigReq_INTERACTION", "RemoteFederate",
+        cb("ZHAircraftSimulatorConfigReq_INTERACTION",
             inter->PlatformID().c_str(), ss.str().c_str());
     }
 }

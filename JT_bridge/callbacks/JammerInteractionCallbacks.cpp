@@ -40,7 +40,7 @@ void onIJammerInteractionReceived(CtIJammerInteraction* inter, void* userData) {
         
         ss << "}";
         
-        cb("INTERACTION", "IJammer_INTERACTION", "RemoteFederate",
+        cb("IJammer_INTERACTION",
             inter->JammerId().c_str(), ss.str().c_str());
     }
 }

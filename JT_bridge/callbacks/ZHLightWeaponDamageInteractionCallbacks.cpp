@@ -43,7 +43,7 @@ void onZHLightWeaponDamageReqInteractionReceived(CtZHLightWeaponDamageReqInterac
         
         ss << "}";
         
-        cb("INTERACTION", "ZHLightWeaponDamageReq_INTERACTION", "RemoteFederate",
+        cb("ZHLightWeaponDamageReq_INTERACTION",
             inter->WeaponID().c_str(), ss.str().c_str());
     }
 }

@@ -39,7 +39,7 @@ void onIPassiveJammerInteractionReceived(CtIPassiveJammerInteraction* inter, voi
         
         ss << "}";
         
-        cb("INTERACTION", "IPassiveJammer_INTERACTION", "RemoteFederate",
+        cb("IPassiveJammer_INTERACTION",
             inter->passiveJammerId().c_str(), ss.str().c_str());
     }
 }

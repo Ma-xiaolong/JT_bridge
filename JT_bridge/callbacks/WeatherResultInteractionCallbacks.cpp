@@ -19,7 +19,7 @@ void onIWeatherResultsInteractionReceived(CtIWeatherResultsInteraction* inter, v
             << "\"bagValue\":\"" << inter->bagValue() << "\""
             << "}";
         
-        cb("INTERACTION", "IWeatherResults_INTERACTION", "RemoteFederate",
+        cb("IWeatherResults_INTERACTION",
             "", ss.str().c_str());
     }
 }
