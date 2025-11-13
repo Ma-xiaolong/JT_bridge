@@ -3,6 +3,7 @@
 // VR-Link
 #include <vl/exerciseConn.h>
 #include <vl/rprFomMap.h>
+#include <vl/reflEntList.h>
 
 // 对象列表
 #include "jammer/CtRefIJammer.h"
@@ -41,6 +42,7 @@
 #include "callbacks/ZHLightWeaponPayloadCallbacks.h"
 #include "callbacks/ZHRadarResultCallbacks.h"
 #include "callbacks/ZHWeaponLoadInfoCallbacks.h"
+#include "callbacks/EntityCallbacks.h"
 #include "callbacks/JammerInteractionCallbacks.h"
 #include "callbacks/PassiveJammerInteractionCallbacks.h"
 #include "callbacks/WeatherInitInteractionCallbacks.h"
@@ -77,6 +79,7 @@ static std::unique_ptr<CtRefZHRadarList> g_zhRadarList;
 static std::unique_ptr<CtRefZHLightWeaponPayloadList> g_zhLightWeaponPayloadList;
 static std::unique_ptr<CtRefZHRadarResultList> g_zhRadarResultList;
 static std::unique_ptr<CtRefZHWeaponLoadInfoList> g_zhWeaponLoadInfoList;
+static std::unique_ptr<DtReflectedEntityList> g_entityList;
 
 VRLinkManager& VRLinkManager::I() {
     static VRLinkManager instance;
@@ -85,7 +88,7 @@ VRLinkManager& VRLinkManager::I() {
 
 bool VRLinkManager::init(const char* fed, const char* fdr) {
     // Step 1: 建立 VR-Link 联邦连接
-    _conn.reset(new DtExerciseConn(fed, fdr, new DtRprFomMapper(0.8)));
+    _conn.reset(new DtExerciseConn("MyLink20251108", "addAttr", new DtRprFomMapper(1.0), "D:\\MAK\\vrlink4.0.9d\\examples\\addAttr\\MyLink20251108.xml"));
 
     // Step 2: 设置对象仓库创建函数
     CtRefIJammer::setStateRepCreator(CtIJammerStateRepository::create);
@@ -106,6 +109,11 @@ bool VRLinkManager::init(const char* fed, const char* fdr) {
     g_zhLightWeaponPayloadList.reset(new CtRefZHLightWeaponPayloadList(_conn.get()));
     g_zhRadarResultList.reset(new CtRefZHRadarResultList(_conn.get()));
     g_zhWeaponLoadInfoList.reset(new CtRefZHWeaponLoadInfoList(_conn.get()));
+    
+    // 创建标准装备实体列表（订阅 BaseEntity 类型）
+    // 注意：DtReflectedEntityList 默认订阅所有 BaseEntity 类型的实体
+    // 我们会在回调函数中过滤特定的实体类型 DtEntityType(1, 1, 225, 1, 1, 0, 0)
+    g_entityList.reset(new DtReflectedEntityList(_conn.get()));
 
     // Step 4: 注册回调
     // IJammer 添加回调：当远程联邦成员发布新的IJammer对象时触发
@@ -142,6 +150,11 @@ bool VRLinkManager::init(const char* fed, const char* fdr) {
     g_zhWeaponLoadInfoList->addZHWeaponLoadInfoAdditionCallback(onZHWeaponLoadInfoAdded, nullptr);
     // ZHWeaponLoadInfo 移除回调：当远程ZHWeaponLoadInfo对象被删除时触发
     g_zhWeaponLoadInfoList->addZHWeaponLoadInfoRemovalCallback(onZHWeaponLoadInfoRemoved, nullptr);
+    
+    // 标准装备实体添加回调：当远程联邦成员发布新的BaseEntity对象时触发
+    g_entityList->addEntityAdditionCallback(onEntityAdded, nullptr);
+    // 标准装备实体移除回调：当远程BaseEntity对象被删除时触发
+    g_entityList->addEntityRemovalCallback(onEntityRemoved, nullptr);
     
     // Step 5: 为已存在的对象注册更新回调（如果有的话）
     // 注意：在初始化时通常还没有对象，因为对象发现是异步的
@@ -194,6 +207,13 @@ bool VRLinkManager::init(const char* fed, const char* fdr) {
     while (weaponLoadInfoObj) {
         weaponLoadInfoObj->addPostUpdateCallback(onZHWeaponLoadInfoUpdated, nullptr);
         weaponLoadInfoObj = weaponLoadInfoObj->next();
+    }
+    
+    // 为已存在的标准装备实体对象注册更新回调
+    DtReflectedEntity* entityObj = g_entityList->first();
+    while (entityObj) {
+        entityObj->addPostUpdateCallback(onEntityUpdated, nullptr);
+        entityObj = entityObj->next();
     }
     
     // Step 6: 注册交互回调
@@ -286,6 +306,7 @@ VRLinkManager::~VRLinkManager() {
     g_zhLightWeaponPayloadList.reset();
     g_zhRadarResultList.reset();
     g_zhWeaponLoadInfoList.reset();
+    g_entityList.reset();
     _conn.reset();
 }
 
@@ -297,6 +318,7 @@ void VRLinkManager::shutdown() {
     g_zhLightWeaponPayloadList.reset();
     g_zhRadarResultList.reset();
     g_zhWeaponLoadInfoList.reset();
+    g_entityList.reset();
     _conn.reset();
 }
 

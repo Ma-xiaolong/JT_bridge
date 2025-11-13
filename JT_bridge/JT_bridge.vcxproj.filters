@@ -249,6 +249,9 @@
     <ClInclude Include="callbacks\ZHWeaponLoadInfoCallbacks.h">
       <Filter>头文件\callbacks</Filter>
     </ClInclude>
+    <ClInclude Include="callbacks\EntityCallbacks.h">
+      <Filter>头文件\callbacks</Filter>
+    </ClInclude>
     <ClInclude Include="callbacks\JammerInteractionCallbacks.h">
       <Filter>头文件\callbacks</Filter>
     </ClInclude>
@@ -504,6 +507,9 @@
       <Filter>源文件\callbacks</Filter>
     </ClCompile>
     <ClCompile Include="callbacks\ZHWeaponLoadInfoCallbacks.cpp">
+      <Filter>源文件\callbacks</Filter>
+    </ClCompile>
+    <ClCompile Include="callbacks\EntityCallbacks.cpp">
       <Filter>源文件\callbacks</Filter>
     </ClCompile>
     <ClCompile Include="callbacks\JammerInteractionCallbacks.cpp">

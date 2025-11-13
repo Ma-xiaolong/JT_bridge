@@ -26,6 +26,7 @@
     <ClInclude Include="callbacks\ZHLightWeaponPayloadCallbacks.h" />
     <ClInclude Include="callbacks\ZHRadarResultCallbacks.h" />
     <ClInclude Include="callbacks\ZHWeaponLoadInfoCallbacks.h" />
+    <ClInclude Include="callbacks\EntityCallbacks.h" />
     <ClInclude Include="callbacks\JammerInteractionCallbacks.h" />
     <ClInclude Include="callbacks\PassiveJammerInteractionCallbacks.h" />
     <ClInclude Include="callbacks\WeatherInitInteractionCallbacks.h" />
@@ -113,6 +114,7 @@
     <ClCompile Include="callbacks\ZHLightWeaponPayloadCallbacks.cpp" />
     <ClCompile Include="callbacks\ZHRadarResultCallbacks.cpp" />
     <ClCompile Include="callbacks\ZHWeaponLoadInfoCallbacks.cpp" />
+    <ClCompile Include="callbacks\EntityCallbacks.cpp" />
     <ClCompile Include="callbacks\JammerInteractionCallbacks.cpp" />
     <ClCompile Include="callbacks\PassiveJammerInteractionCallbacks.cpp" />
     <ClCompile Include="callbacks\WeatherInitInteractionCallbacks.cpp" />
