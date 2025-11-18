@@ -46,7 +46,7 @@ void onEntityUpdated(DtReflectedEntity* obj, void* userData) {
     if (!esr) return;
     
     // Retrieve entity identifier
-    std::string entityIdStr = formatEntityID(obj);
+    DtGlobalObjectDesignator globalIdObj = esr->globalId();
     
     // Retrieve entity type
     DtEntityType entityType = esr->entityType();
@@ -70,7 +70,7 @@ void onEntityUpdated(DtReflectedEntity* obj, void* userData) {
     std::ostringstream ss;
     ss << std::fixed << std::setprecision(6);
     ss << "{"
-        << "\"EntityID\":\"" << entityIdStr << "\","
+        << "\"GlobalID\":\"" << globalIdObj << "\","
         << "\"EntityType\":{"
             << "\"kind\":" << (int)entityType.kind() << ","
             << "\"domain\":" << (int)entityType.domain() << ","
@@ -107,15 +107,20 @@ void onEntityUpdated(DtReflectedEntity* obj, void* userData) {
     // If it's the first update, send DISCOVER event; otherwise, send UPDATE event
     bool isFirstUpdate = (g_discoveredEntities.find(obj) == g_discoveredEntities.end());
     
+    // Convert globalId to string for callback parameter
+    std::ostringstream idStream;
+    idStream << globalIdObj;
+    std::string globalIdStr = idStream.str();
+    
     if (isFirstUpdate) {
         // First update: send DISCOVER event
         g_discoveredEntities.insert(obj);
         cb("Entity_DISCOVER",
-            entityIdStr.c_str(), ss.str().c_str());
+            globalIdStr.c_str(), ss.str().c_str());
     } else {
         // Subsequent updates: send UPDATE event
         cb("Entity_UPDATE",
-            entityIdStr.c_str(), ss.str().c_str());
+            globalIdStr.c_str(), ss.str().c_str());
     }
 }
 
@@ -128,11 +133,16 @@ void onEntityRemoved(DtReflectedEntity* obj, void* userData) {
     
     JavaEventCallback cb = EventBridge::get();
     if (cb) {
-        std::string entityIdStr = formatEntityID(obj);
-        
-        cb("Entity_REMOVED",
-            entityIdStr.c_str(),
-            "{\"removed\":true}");
+        DtEntityStateRepository* esr = obj->esr();
+        if (esr) {
+            DtGlobalObjectDesignator globalIdObj = esr->globalId();
+            std::ostringstream idStream;
+            idStream << globalIdObj;
+            
+            cb("Entity_REMOVED",
+                idStream.str().c_str(),
+                "{\"removed\":true}");
+        }
     }
 }
 
