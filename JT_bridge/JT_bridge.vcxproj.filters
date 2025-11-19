@@ -413,8 +413,8 @@
     <ClCompile Include="jammer\CtIJammerPublisher.cpp">
       <Filter>源文件\object\Jammer</Filter>
     </ClCompile>
-    <ClCompile Include="jammer\VRLinkUtilStub.cpp">
-      <Filter>源文件\object\Jammer</Filter>
+    <ClCompile Include="common\VRLinkUtilStub.cpp">
+      <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="jamInter\CtIJammerinteraction.cpp">
       <Filter>源文件\interaction\jamInter</Filter>

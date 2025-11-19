@@ -129,7 +129,7 @@
     <ClCompile Include="jammer\CtIJammerStateRepository.cpp" />
     <ClCompile Include="jammer\CtRefIJammer.cpp" />
     <ClCompile Include="jammer\CtRefIJammerList.cpp" />
-    <ClCompile Include="jammer\VRLinkUtilStub.cpp" />
+    <ClCompile Include="common\VRLinkUtilStub.cpp" />
     <ClCompile Include="jamInter\CtIJammerinteraction.cpp" />
     <ClCompile Include="jamInter\CtIJammerIntEnc.cpp" />
     <ClCompile Include="jamInter\CtIJammerIntDec.cpp" />
