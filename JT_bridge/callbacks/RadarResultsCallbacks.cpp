@@ -36,14 +36,14 @@ void onRadarResultsUpdated(CtRefRadarResults* obj, void* userData) {
     std::ostringstream ss;
     ss << "{"
        << "\"ID\":\"" << rep->ID() << "\","
-       << "\"fedTime\":" << rep->fedTime() << ","
-       << "\"targetId\":\"" << rep->targetId() << "\","
+    //    << "\"fedTime\":" << rep->fedTime() << ","
+    //    << "\"targetId\":\"" << rep->targetId() << "\","
        << "\"batch_number\":\"" << rep->batch_number() << "\","
        << "\"red_fusion\":\"" << rep->red_fusion() << "\","
-       << "\"blue_fusion\":\"" << rep->blue_fusion() << "\","
-       << "\"other1\":\"" << rep->other1() << "\","
-       << "\"other2\":\"" << rep->other2() << "\","
-       << "\"other3\":\"" << rep->other3() << "\""
+    //    << "\"blue_fusion\":\"" << rep->blue_fusion() << "\","
+    //    << "\"other1\":\"" << rep->other1() << "\","
+    //    << "\"other2\":\"" << rep->other2() << "\","
+    //    << "\"other3\":\"" << rep->other3() << "\""
        << "}";
 
     const std::string objectId = radarResultsIdentifier(obj, rep);

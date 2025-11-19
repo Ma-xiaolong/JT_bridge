@@ -66,20 +66,24 @@ void onEntityUpdated(DtReflectedEntity* obj, void* userData) {
     // Frozen flag (default false if API is unavailable)
     bool isFrozen = false;
     
+    // Build EntityType string "(kind,domain,country,category,subcat,specific,extra)"
+    std::ostringstream entityTypeStream;
+    entityTypeStream << "("
+        << static_cast<int>(entityType.kind()) << ","
+        << static_cast<int>(entityType.domain()) << ","
+        << entityType.country() << ","
+        << static_cast<int>(entityType.category()) << ","
+        << static_cast<int>(entityType.subCategory()) << ","
+        << static_cast<int>(entityType.specific()) << ","
+        << static_cast<int>(entityType.extra())
+        << ")";
+
     // Build JSON payload
     std::ostringstream ss;
     ss << std::fixed << std::setprecision(6);
     ss << "{"
         << "\"GlobalID\":\"" << globalIdObj << "\","
-        << "\"EntityType\":{"
-            << "\"kind\":" << (int)entityType.kind() << ","
-            << "\"domain\":" << (int)entityType.domain() << ","
-            << "\"country\":" << entityType.country() << ","
-            << "\"category\":" << (int)entityType.category() << ","
-            << "\"subcategory\":" << (int)entityType.subCategory() << ","
-            << "\"specific\":" << (int)entityType.specific() << ","
-            << "\"extra\":" << (int)entityType.extra()
-        << "},"
+        << "\"EntityType\":\"" << entityTypeStream.str() << "\","
         << "\"WorldLocation\":{"
             << "\"x\":" << location.x() << ","
             << "\"y\":" << location.y() << ","

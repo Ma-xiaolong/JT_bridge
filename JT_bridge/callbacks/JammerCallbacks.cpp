@@ -35,11 +35,12 @@ void onIJammerUpdated(CtRefIJammer* obj, void* userData) {
     std::ostringstream ss;
     ss << "{"
         << "\"JammerID\":\"" << rep->JammerID() << "\","
-        << "\"power\":" << rep->JM_power() << ","
-        << "\"freq\":" << rep->center_frequency() << ","
-        << "\"bandwidth\":" << rep->bandwidth() << ","
-        << "\"beamwidth\":" << rep->beamwidth() << ","
-        << "\"mode\":" << rep->interference_mode()
+        << "\"Timestamp\":" << rep->Timestamp() << ","
+        << "\"interference_mode\":" << rep->interference_mode() << ","
+        << "\"jam_target\":\"" << rep->jam_target() << "\","
+        << "\"jam_pos_x\":" << rep->jam_pos_x() << ","
+        << "\"jam_pos_y\":" << rep->jam_pos_y() << ","
+        << "\"jam_pos_z\":" << rep->jam_pos_z()
         << "}";
     
     // 检查是否是第一次更新（即对象刚被发现后的第一次更新）
