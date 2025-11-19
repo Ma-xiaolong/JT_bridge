@@ -66,6 +66,10 @@ ZHradar/
 ZHradarinter/
 ZHradarresult/
 ZHWeaponLoadInfo/
+ExtendEntity/
+Radar/
+radarresult/
+ZHElectroOpticalRadarResult/
 
 # CMake / VS 生成的配置文件
 CMakeFiles/

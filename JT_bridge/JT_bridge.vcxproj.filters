@@ -121,6 +121,30 @@
     <Filter Include="源文件\object\ZHWeaponLoadInfo">
       <UniqueIdentifier>{b8c9d0e1-f2a3-4567-8901-234567890168}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\object\Radar">
+      <UniqueIdentifier>{11111111-2222-3333-4444-555555555555}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\object\Radar">
+      <UniqueIdentifier>{22222222-3333-4444-5555-666666666666}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\object\ExtendEntity">
+      <UniqueIdentifier>{33333333-4444-5555-6666-777777777777}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\object\ExtendEntity">
+      <UniqueIdentifier>{44444444-5555-6666-7777-888888888888}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\object\RadarResults">
+      <UniqueIdentifier>{55555555-6666-7777-8888-999999999999}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\object\RadarResults">
+      <UniqueIdentifier>{66666666-7777-8888-9999-aaaaaaaaaaaa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\object\ZHElectroOpticalRadarResult">
+      <UniqueIdentifier>{77777777-8888-9999-aaaa-bbbbbbbbbbbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\object\ZHElectroOpticalRadarResult">
+      <UniqueIdentifier>{88888888-9999-aaaa-bbbb-cccccccccccc}</UniqueIdentifier>
+    </Filter>
     <Filter Include="VRLink">
       <UniqueIdentifier>{96e6d1a1-0b0d-4e38-9ee7-b110681cbdff}</UniqueIdentifier>
     </Filter>
@@ -249,6 +273,18 @@
     <ClInclude Include="callbacks\ZHWeaponLoadInfoCallbacks.h">
       <Filter>头文件\callbacks</Filter>
     </ClInclude>
+    <ClInclude Include="callbacks\RadarCallbacks.h">
+      <Filter>头文件\callbacks</Filter>
+    </ClInclude>
+    <ClInclude Include="callbacks\ExtendEntityCallbacks.h">
+      <Filter>头文件\callbacks</Filter>
+    </ClInclude>
+    <ClInclude Include="callbacks\RadarResultsCallbacks.h">
+      <Filter>头文件\callbacks</Filter>
+    </ClInclude>
+    <ClInclude Include="callbacks\ZHElectroOpticalRadarResultCallbacks.h">
+      <Filter>头文件\callbacks</Filter>
+    </ClInclude>
     <ClInclude Include="callbacks\EntityCallbacks.h">
       <Filter>头文件\callbacks</Filter>
     </ClInclude>
@@ -312,6 +348,24 @@
     <ClInclude Include="ZHAircraftEntity\CtZHAircraftEntityStateRepository.h">
       <Filter>头文件\object\ZHAircraftEntity</Filter>
     </ClInclude>
+    <ClInclude Include="ExtendEntity\CtExtendEntityObjDec.h">
+      <Filter>头文件\object\ExtendEntity</Filter>
+    </ClInclude>
+    <ClInclude Include="ExtendEntity\CtExtendEntityObjEnc.h">
+      <Filter>头文件\object\ExtendEntity</Filter>
+    </ClInclude>
+    <ClInclude Include="ExtendEntity\CtExtendEntityPublisher.h">
+      <Filter>头文件\object\ExtendEntity</Filter>
+    </ClInclude>
+    <ClInclude Include="ExtendEntity\CtExtendEntityStateRepository.h">
+      <Filter>头文件\object\ExtendEntity</Filter>
+    </ClInclude>
+    <ClInclude Include="ExtendEntity\CtRefExtendEntity.h">
+      <Filter>头文件\object\ExtendEntity</Filter>
+    </ClInclude>
+    <ClInclude Include="ExtendEntity\CtRefExtendEntityList.h">
+      <Filter>头文件\object\ExtendEntity</Filter>
+    </ClInclude>
     <ClInclude Include="zhradar\CtZHRadarObjDec.h">
       <Filter>头文件\object\ZHRadar</Filter>
     </ClInclude>
@@ -329,6 +383,24 @@
     </ClInclude>
     <ClInclude Include="zhradar\CtRefZHRadarList.h">
       <Filter>头文件\object\ZHRadar</Filter>
+    </ClInclude>
+    <ClInclude Include="radar\CtRadarObjDec.h">
+      <Filter>头文件\object\Radar</Filter>
+    </ClInclude>
+    <ClInclude Include="radar\CtRadarObjEnc.h">
+      <Filter>头文件\object\Radar</Filter>
+    </ClInclude>
+    <ClInclude Include="radar\CtRadarPublisher.h">
+      <Filter>头文件\object\Radar</Filter>
+    </ClInclude>
+    <ClInclude Include="radar\CtRadarStateRepository.h">
+      <Filter>头文件\object\Radar</Filter>
+    </ClInclude>
+    <ClInclude Include="radar\CtRefRadar.h">
+      <Filter>头文件\object\Radar</Filter>
+    </ClInclude>
+    <ClInclude Include="radar\CtRefRadarList.h">
+      <Filter>头文件\object\Radar</Filter>
     </ClInclude>
     <ClInclude Include="ZHLightWeaponPayload\CtZHLightWeaponPayloadObjDec.h">
       <Filter>头文件\object\ZHLightWeaponPayload</Filter>
@@ -366,6 +438,24 @@
     <ClInclude Include="zhradarresult\CtRefZHRadarResultList.h">
       <Filter>头文件\object\ZHRadarResult</Filter>
     </ClInclude>
+    <ClInclude Include="radarresult\CtRadarResultsObjDec.h">
+      <Filter>头文件\object\RadarResults</Filter>
+    </ClInclude>
+    <ClInclude Include="radarresult\CtRadarResultsObjEnc.h">
+      <Filter>头文件\object\RadarResults</Filter>
+    </ClInclude>
+    <ClInclude Include="radarresult\CtRadarResultsPublisher.h">
+      <Filter>头文件\object\RadarResults</Filter>
+    </ClInclude>
+    <ClInclude Include="radarresult\CtRadarResultsStateRepository.h">
+      <Filter>头文件\object\RadarResults</Filter>
+    </ClInclude>
+    <ClInclude Include="radarresult\CtRefRadarResults.h">
+      <Filter>头文件\object\RadarResults</Filter>
+    </ClInclude>
+    <ClInclude Include="radarresult\CtRefRadarResultsList.h">
+      <Filter>头文件\object\RadarResults</Filter>
+    </ClInclude>
     <ClInclude Include="ZHWeaponLoadInfo\CtZHWeaponLoadInfoObjDec.h">
       <Filter>头文件\object\ZHWeaponLoadInfo</Filter>
     </ClInclude>
@@ -383,6 +473,24 @@
     </ClInclude>
     <ClInclude Include="ZHWeaponLoadInfo\CtRefZHWeaponLoadInfoList.h">
       <Filter>头文件\object\ZHWeaponLoadInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="ZHElectroOpticalRadarResult\CtZHElectroOpticalRadarResultObjDec.h">
+      <Filter>头文件\object\ZHElectroOpticalRadarResult</Filter>
+    </ClInclude>
+    <ClInclude Include="ZHElectroOpticalRadarResult\CtZHElectroOpticalRadarResultObjEnc.h">
+      <Filter>头文件\object\ZHElectroOpticalRadarResult</Filter>
+    </ClInclude>
+    <ClInclude Include="ZHElectroOpticalRadarResult\CtZHElectroOpticalRadarResultPublisher.h">
+      <Filter>头文件\object\ZHElectroOpticalRadarResult</Filter>
+    </ClInclude>
+    <ClInclude Include="ZHElectroOpticalRadarResult\CtZHElectroOpticalRadarResultStateRepository.h">
+      <Filter>头文件\object\ZHElectroOpticalRadarResult</Filter>
+    </ClInclude>
+    <ClInclude Include="ZHElectroOpticalRadarResult\CtRefZHElectroOpticalRadarResult.h">
+      <Filter>头文件\object\ZHElectroOpticalRadarResult</Filter>
+    </ClInclude>
+    <ClInclude Include="ZHElectroOpticalRadarResult\CtRefZHElectroOpticalRadarResultList.h">
+      <Filter>头文件\object\ZHElectroOpticalRadarResult</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -509,6 +617,18 @@
     <ClCompile Include="callbacks\ZHWeaponLoadInfoCallbacks.cpp">
       <Filter>源文件\callbacks</Filter>
     </ClCompile>
+    <ClCompile Include="callbacks\RadarCallbacks.cpp">
+      <Filter>源文件\callbacks</Filter>
+    </ClCompile>
+    <ClCompile Include="callbacks\ExtendEntityCallbacks.cpp">
+      <Filter>源文件\callbacks</Filter>
+    </ClCompile>
+    <ClCompile Include="callbacks\RadarResultsCallbacks.cpp">
+      <Filter>源文件\callbacks</Filter>
+    </ClCompile>
+    <ClCompile Include="callbacks\ZHElectroOpticalRadarResultCallbacks.cpp">
+      <Filter>源文件\callbacks</Filter>
+    </ClCompile>
     <ClCompile Include="callbacks\EntityCallbacks.cpp">
       <Filter>源文件\callbacks</Filter>
     </ClCompile>
@@ -572,6 +692,24 @@
     <ClCompile Include="ZHAircraftEntity\CtZHAircraftEntityStateRepository.cpp">
       <Filter>源文件\object\ZHAircraftEntity</Filter>
     </ClCompile>
+    <ClCompile Include="ExtendEntity\CtExtendEntityObjDec.cpp">
+      <Filter>源文件\object\ExtendEntity</Filter>
+    </ClCompile>
+    <ClCompile Include="ExtendEntity\CtExtendEntityObjEnc.cpp">
+      <Filter>源文件\object\ExtendEntity</Filter>
+    </ClCompile>
+    <ClCompile Include="ExtendEntity\CtExtendEntityPublisher.cpp">
+      <Filter>源文件\object\ExtendEntity</Filter>
+    </ClCompile>
+    <ClCompile Include="ExtendEntity\CtExtendEntityStateRepository.cpp">
+      <Filter>源文件\object\ExtendEntity</Filter>
+    </ClCompile>
+    <ClCompile Include="ExtendEntity\CtRefExtendEntity.cpp">
+      <Filter>源文件\object\ExtendEntity</Filter>
+    </ClCompile>
+    <ClCompile Include="ExtendEntity\CtRefExtendEntityList.cpp">
+      <Filter>源文件\object\ExtendEntity</Filter>
+    </ClCompile>
     <ClCompile Include="zhradar\CtZHRadarObjDec.cpp">
       <Filter>源文件\object\ZHRadar</Filter>
     </ClCompile>
@@ -589,6 +727,24 @@
     </ClCompile>
     <ClCompile Include="zhradar\CtRefZHRadarList.cpp">
       <Filter>源文件\object\ZHRadar</Filter>
+    </ClCompile>
+    <ClCompile Include="radar\CtRadarObjDec.cpp">
+      <Filter>源文件\object\Radar</Filter>
+    </ClCompile>
+    <ClCompile Include="radar\CtRadarObjEnc.cpp">
+      <Filter>源文件\object\Radar</Filter>
+    </ClCompile>
+    <ClCompile Include="radar\CtRadarPublisher.cpp">
+      <Filter>源文件\object\Radar</Filter>
+    </ClCompile>
+    <ClCompile Include="radar\CtRadarStateRepository.cpp">
+      <Filter>源文件\object\Radar</Filter>
+    </ClCompile>
+    <ClCompile Include="radar\CtRefRadar.cpp">
+      <Filter>源文件\object\Radar</Filter>
+    </ClCompile>
+    <ClCompile Include="radar\CtRefRadarList.cpp">
+      <Filter>源文件\object\Radar</Filter>
     </ClCompile>
     <ClCompile Include="ZHLightWeaponPayload\CtZHLightWeaponPayloadObjDec.cpp">
       <Filter>源文件\object\ZHLightWeaponPayload</Filter>
@@ -626,6 +782,24 @@
     <ClCompile Include="zhradarresult\CtRefZHRadarResultList.cpp">
       <Filter>源文件\object\ZHRadarResult</Filter>
     </ClCompile>
+    <ClCompile Include="radarresult\CtRadarResultsObjDec.cpp">
+      <Filter>源文件\object\RadarResults</Filter>
+    </ClCompile>
+    <ClCompile Include="radarresult\CtRadarResultsObjEnc.cpp">
+      <Filter>源文件\object\RadarResults</Filter>
+    </ClCompile>
+    <ClCompile Include="radarresult\CtRadarResultsPublisher.cpp">
+      <Filter>源文件\object\RadarResults</Filter>
+    </ClCompile>
+    <ClCompile Include="radarresult\CtRadarResultsStateRepository.cpp">
+      <Filter>源文件\object\RadarResults</Filter>
+    </ClCompile>
+    <ClCompile Include="radarresult\CtRefRadarResults.cpp">
+      <Filter>源文件\object\RadarResults</Filter>
+    </ClCompile>
+    <ClCompile Include="radarresult\CtRefRadarResultsList.cpp">
+      <Filter>源文件\object\RadarResults</Filter>
+    </ClCompile>
     <ClCompile Include="ZHWeaponLoadInfo\CtZHWeaponLoadInfoObjDec.cpp">
       <Filter>源文件\object\ZHWeaponLoadInfo</Filter>
     </ClCompile>
@@ -643,6 +817,24 @@
     </ClCompile>
     <ClCompile Include="ZHWeaponLoadInfo\CtRefZHWeaponLoadInfoList.cpp">
       <Filter>源文件\object\ZHWeaponLoadInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="ZHElectroOpticalRadarResult\CtZHElectroOpticalRadarResultObjDec.cpp">
+      <Filter>源文件\object\ZHElectroOpticalRadarResult</Filter>
+    </ClCompile>
+    <ClCompile Include="ZHElectroOpticalRadarResult\CtZHElectroOpticalRadarResultObjEnc.cpp">
+      <Filter>源文件\object\ZHElectroOpticalRadarResult</Filter>
+    </ClCompile>
+    <ClCompile Include="ZHElectroOpticalRadarResult\CtZHElectroOpticalRadarResultPublisher.cpp">
+      <Filter>源文件\object\ZHElectroOpticalRadarResult</Filter>
+    </ClCompile>
+    <ClCompile Include="ZHElectroOpticalRadarResult\CtZHElectroOpticalRadarResultStateRepository.cpp">
+      <Filter>源文件\object\ZHElectroOpticalRadarResult</Filter>
+    </ClCompile>
+    <ClCompile Include="ZHElectroOpticalRadarResult\CtRefZHElectroOpticalRadarResult.cpp">
+      <Filter>源文件\object\ZHElectroOpticalRadarResult</Filter>
+    </ClCompile>
+    <ClCompile Include="ZHElectroOpticalRadarResult\CtRefZHElectroOpticalRadarResultList.cpp">
+      <Filter>源文件\object\ZHElectroOpticalRadarResult</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

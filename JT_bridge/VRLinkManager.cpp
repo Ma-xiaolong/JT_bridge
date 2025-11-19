@@ -22,6 +22,10 @@
 #include "zhradar/CtZHRadarStateRepository.h"
 #include "zhradar/CtRefZHRadarList.h"
 
+#include "radar/CtRefRadar.h"
+#include "radar/CtRadarStateRepository.h"
+#include "radar/CtRefRadarList.h"
+
 #include "ZHLightWeaponPayload/CtRefZHLightWeaponPayload.h"
 #include "ZHLightWeaponPayload/CtZHLightWeaponPayloadStateRepository.h"
 #include "ZHLightWeaponPayload/CtRefZHLightWeaponPayloadList.h"
@@ -30,9 +34,21 @@
 #include "zhradarresult/CtZHRadarResultStateRepository.h"
 #include "zhradarresult/CtRefZHRadarResultList.h"
 
+#include "radarresult/CtRefRadarResults.h"
+#include "radarresult/CtRadarResultsStateRepository.h"
+#include "radarresult/CtRefRadarResultsList.h"
+
+#include "ExtendEntity/CtRefExtendEntity.h"
+#include "ExtendEntity/CtExtendEntityStateRepository.h"
+#include "ExtendEntity/CtRefExtendEntityList.h"
+
 #include "ZHWeaponLoadInfo/CtRefZHWeaponLoadInfo.h"
 #include "ZHWeaponLoadInfo/CtZHWeaponLoadInfoStateRepository.h"
 #include "ZHWeaponLoadInfo/CtRefZHWeaponLoadInfoList.h"
+
+#include "ZHElectroOpticalRadarResult/CtRefZHElectroOpticalRadarResult.h"
+#include "ZHElectroOpticalRadarResult/CtZHElectroOpticalRadarResultStateRepository.h"
+#include "ZHElectroOpticalRadarResult/CtRefZHElectroOpticalRadarResultList.h"
 
 // 回调函数
 #include "callbacks/JammerCallbacks.h"
@@ -42,6 +58,10 @@
 #include "callbacks/ZHLightWeaponPayloadCallbacks.h"
 #include "callbacks/ZHRadarResultCallbacks.h"
 #include "callbacks/ZHWeaponLoadInfoCallbacks.h"
+#include "callbacks/RadarCallbacks.h"
+#include "callbacks/ExtendEntityCallbacks.h"
+#include "callbacks/RadarResultsCallbacks.h"
+#include "callbacks/ZHElectroOpticalRadarResultCallbacks.h"
 #include "callbacks/EntityCallbacks.h"
 #include "callbacks/JammerInteractionCallbacks.h"
 #include "callbacks/PassiveJammerInteractionCallbacks.h"
@@ -79,6 +99,10 @@ static std::unique_ptr<CtRefZHRadarList> g_zhRadarList;
 static std::unique_ptr<CtRefZHLightWeaponPayloadList> g_zhLightWeaponPayloadList;
 static std::unique_ptr<CtRefZHRadarResultList> g_zhRadarResultList;
 static std::unique_ptr<CtRefZHWeaponLoadInfoList> g_zhWeaponLoadInfoList;
+static std::unique_ptr<CtRefRadarList> g_radarList;
+static std::unique_ptr<CtRefExtendEntityList> g_extendEntityList;
+static std::unique_ptr<CtRefRadarResultsList> g_radarResultsList;
+static std::unique_ptr<CtRefZHElectroOpticalRadarResultList> g_zhElectroOpticalRadarResultList;
 static std::unique_ptr<DtReflectedEntityList> g_entityList;
 
 VRLinkManager& VRLinkManager::I() {
@@ -98,6 +122,10 @@ bool VRLinkManager::init(const char* fed, const char* fdr) {
     CtRefZHLightWeaponPayload::setStateRepCreator(CtZHLightWeaponPayloadStateRepository::create);
     CtRefZHRadarResult::setStateRepCreator(CtZHRadarResultStateRepository::create);
     CtRefZHWeaponLoadInfo::setStateRepCreator(CtZHWeaponLoadInfoStateRepository::create);
+    CtRefRadar::setStateRepCreator(CtRadarStateRepository::create);
+    CtRefExtendEntity::setStateRepCreator(CtExtendEntityStateRepository::create);
+    CtRefRadarResults::setStateRepCreator(CtRadarResultsStateRepository::create);
+    CtRefZHElectroOpticalRadarResult::setStateRepCreator(CtZHElectroOpticalRadarResultStateRepository::create);
 
     // Step 3: 创建对象订阅列表
     // 注意：构造函数中会自动调用 addObjectClassByName("HLAobjectRoot.IJammer")
@@ -109,6 +137,10 @@ bool VRLinkManager::init(const char* fed, const char* fdr) {
     g_zhLightWeaponPayloadList.reset(new CtRefZHLightWeaponPayloadList(_conn.get()));
     g_zhRadarResultList.reset(new CtRefZHRadarResultList(_conn.get()));
     g_zhWeaponLoadInfoList.reset(new CtRefZHWeaponLoadInfoList(_conn.get()));
+    g_radarList.reset(new CtRefRadarList(_conn.get()));
+    g_extendEntityList.reset(new CtRefExtendEntityList(_conn.get()));
+    g_radarResultsList.reset(new CtRefRadarResultsList(_conn.get()));
+    g_zhElectroOpticalRadarResultList.reset(new CtRefZHElectroOpticalRadarResultList(_conn.get()));
     
     // 创建标准装备实体列表（订阅 BaseEntity 类型）
     // 注意：DtReflectedEntityList 默认订阅所有 BaseEntity 类型的实体
@@ -150,6 +182,26 @@ bool VRLinkManager::init(const char* fed, const char* fdr) {
     g_zhWeaponLoadInfoList->addZHWeaponLoadInfoAdditionCallback(onZHWeaponLoadInfoAdded, nullptr);
     // ZHWeaponLoadInfo 移除回调：当远程ZHWeaponLoadInfo对象被删除时触发
     g_zhWeaponLoadInfoList->addZHWeaponLoadInfoRemovalCallback(onZHWeaponLoadInfoRemoved, nullptr);
+
+    // Radar 添加回调
+    g_radarList->addRadarAdditionCallback(onRadarAdded, nullptr);
+    // Radar 移除回调
+    g_radarList->addRadarRemovalCallback(onRadarRemoved, nullptr);
+
+    // ExtendEntity 添加回调
+    g_extendEntityList->addExtendEntityAdditionCallback(onExtendEntityAdded, nullptr);
+    // ExtendEntity 移除回调
+    g_extendEntityList->addExtendEntityRemovalCallback(onExtendEntityRemoved, nullptr);
+
+    // RadarResults 添加回调
+    g_radarResultsList->addRadarResultsAdditionCallback(onRadarResultsAdded, nullptr);
+    // RadarResults 移除回调
+    g_radarResultsList->addRadarResultsRemovalCallback(onRadarResultsRemoved, nullptr);
+
+    // ZHElectroOpticalRadarResult 添加回调
+    g_zhElectroOpticalRadarResultList->addZHElectroOpticalRadarResultAdditionCallback(onZHElectroOpticalRadarResultAdded, nullptr);
+    // ZHElectroOpticalRadarResult 移除回调
+    g_zhElectroOpticalRadarResultList->addZHElectroOpticalRadarResultRemovalCallback(onZHElectroOpticalRadarResultRemoved, nullptr);
     
     // 标准装备实体添加回调：当远程联邦成员发布新的BaseEntity对象时触发
     g_entityList->addEntityAdditionCallback(onEntityAdded, nullptr);
@@ -207,6 +259,34 @@ bool VRLinkManager::init(const char* fed, const char* fdr) {
     while (weaponLoadInfoObj) {
         weaponLoadInfoObj->addPostUpdateCallback(onZHWeaponLoadInfoUpdated, nullptr);
         weaponLoadInfoObj = weaponLoadInfoObj->next();
+    }
+
+    // 为已存在的 Radar 对象注册更新回调
+    CtRefRadar* legacyRadarObj = g_radarList->first();
+    while (legacyRadarObj) {
+        legacyRadarObj->addPostUpdateCallback(onRadarUpdated, nullptr);
+        legacyRadarObj = legacyRadarObj->next();
+    }
+
+    // 为已存在的 ExtendEntity 对象注册更新回调
+    CtRefExtendEntity* extendObj = g_extendEntityList->first();
+    while (extendObj) {
+        extendObj->addPostUpdateCallback(onExtendEntityUpdated, nullptr);
+        extendObj = extendObj->next();
+    }
+
+    // 为已存在的 RadarResults 对象注册更新回调
+    CtRefRadarResults* radarResultsObj = g_radarResultsList->first();
+    while (radarResultsObj) {
+        radarResultsObj->addPostUpdateCallback(onRadarResultsUpdated, nullptr);
+        radarResultsObj = radarResultsObj->next();
+    }
+
+    // 为已存在的 ZHElectroOpticalRadarResult 对象注册更新回调
+    CtRefZHElectroOpticalRadarResult* electroResultObj = g_zhElectroOpticalRadarResultList->first();
+    while (electroResultObj) {
+        electroResultObj->addPostUpdateCallback(onZHElectroOpticalRadarResultUpdated, nullptr);
+        electroResultObj = electroResultObj->next();
     }
     
     // 为已存在的标准装备实体对象注册更新回调
@@ -306,6 +386,10 @@ VRLinkManager::~VRLinkManager() {
     g_zhLightWeaponPayloadList.reset();
     g_zhRadarResultList.reset();
     g_zhWeaponLoadInfoList.reset();
+    g_radarList.reset();
+    g_extendEntityList.reset();
+    g_radarResultsList.reset();
+    g_zhElectroOpticalRadarResultList.reset();
     g_entityList.reset();
     _conn.reset();
 }
@@ -318,6 +402,10 @@ void VRLinkManager::shutdown() {
     g_zhLightWeaponPayloadList.reset();
     g_zhRadarResultList.reset();
     g_zhWeaponLoadInfoList.reset();
+    g_radarList.reset();
+    g_extendEntityList.reset();
+    g_radarResultsList.reset();
+    g_zhElectroOpticalRadarResultList.reset();
     g_entityList.reset();
     _conn.reset();
 }
