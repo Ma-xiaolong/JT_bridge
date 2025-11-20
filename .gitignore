@@ -49,6 +49,7 @@ passiveJammerInter/
 radarcontrol/
 simcontrol/
 weatherinit/
+weatherresultinter/
 weatherresultinit/
 ZHAircraftControlCmdInter/
 ZHAircraftEntity/

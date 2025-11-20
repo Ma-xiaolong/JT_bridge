@@ -69,6 +69,9 @@
     <ClInclude Include="ZHLightWeaponExplodeInter\CtZHLightWeaponExplodeReqinteraction.h" />
     <ClInclude Include="ZHLightWeaponExplodeInter\CtZHLightWeaponExplodeReqIntEnc.h" />
     <ClInclude Include="ZHLightWeaponExplodeInter\CtZHLightWeaponExplodeReqIntDec.h" />
+    <ClInclude Include="radarcontrol\CtIRadarControllerinteraction.h" />
+    <ClInclude Include="radarcontrol\CtIRadarControllerIntEnc.h" />
+    <ClInclude Include="radarcontrol\CtIRadarControllerIntDec.h" />
     <ClInclude Include="passiveJammer\CtIPassiveJammerObjDec.h" />
     <ClInclude Include="passiveJammer\CtIPassiveJammerObjEnc.h" />
     <ClInclude Include="passiveJammer\CtIPassiveJammerPublisher.h" />
@@ -186,6 +189,9 @@
     <ClCompile Include="ZHLightWeaponExplodeInter\CtZHLightWeaponExplodeReqinteraction.cpp" />
     <ClCompile Include="ZHLightWeaponExplodeInter\CtZHLightWeaponExplodeReqIntEnc.cpp" />
     <ClCompile Include="ZHLightWeaponExplodeInter\CtZHLightWeaponExplodeReqIntDec.cpp" />
+    <ClCompile Include="radarcontrol\CtIRadarControllerinteraction.cpp" />
+    <ClCompile Include="radarcontrol\CtIRadarControllerIntEnc.cpp" />
+    <ClCompile Include="radarcontrol\CtIRadarControllerIntDec.cpp" />
     <ClCompile Include="passiveJammer\CtIPassiveJammerObjDec.cpp" />
     <ClCompile Include="passiveJammer\CtIPassiveJammerObjEnc.cpp" />
     <ClCompile Include="passiveJammer\CtIPassiveJammerPublisher.cpp" />

@@ -17,6 +17,11 @@ public:
 
 	DtExerciseConn* conn() const { return _conn.get(); }
 
+	bool publishRadarControlInteraction(const char* platform_id,
+		const char* equipment_id,
+		int state,
+		double mission_time);
+
 	// 析构函数需要在实现文件中定义，以便正确删除 DtExerciseConn
 	~VRLinkManager();
 

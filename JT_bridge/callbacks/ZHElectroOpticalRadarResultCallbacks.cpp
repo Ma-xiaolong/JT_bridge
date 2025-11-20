@@ -40,12 +40,12 @@ void onZHElectroOpticalRadarResultUpdated(CtRefZHElectroOpticalRadarResult* obj,
     ss << "{"
        << "\"Timestamp\":" << rep->Timestamp() << ","
        << "\"Result\":\"" << rep->Result() << "\","
-       << "\"other1\":\"" << rep->other1() << "\","
-       << "\"other2\":\"" << rep->other2() << "\","
-       << "\"other3\":\"" << rep->other3() << "\","
-       << "\"other4\":\"" << rep->other4() << "\","
-       << "\"other5\":\"" << rep->other5() << "\","
-       << "\"other6\":\"" << rep->other6() << "\""
+    //    << "\"other1\":\"" << rep->other1() << "\","
+    //    << "\"other2\":\"" << rep->other2() << "\","
+    //    << "\"other3\":\"" << rep->other3() << "\","
+    //    << "\"other4\":\"" << rep->other4() << "\","
+    //    << "\"other5\":\"" << rep->other5() << "\","
+    //    << "\"other6\":\"" << rep->other6() << "\""
        << "}";
 
     const std::string objectId = electroResultIdentifier(obj, rep);

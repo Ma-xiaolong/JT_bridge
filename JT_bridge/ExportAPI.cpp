@@ -16,6 +16,10 @@ extern "C" {
 		VRLinkManager::I().pumpOnce();
 	}
 
+	bool __stdcall PublishRadarControlInteraction(const char* platform_id, const char* equipment_id, int state, double mission_time) {
+		return VRLinkManager::I().publishRadarControlInteraction(platform_id, equipment_id, state, mission_time);
+	}
+
 	void __stdcall ShutdownVRLink() {
 		VRLinkManager::I().shutdown();
 	}

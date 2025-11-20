@@ -81,6 +81,7 @@
 #include "zhradarinter/CtZHRadarReqinteraction.h"
 #include "ZHLightWeaponDamageInter/CtZHLightWeaponDamageReqinteraction.h"
 #include "ZHLightWeaponExplodeInter/CtZHLightWeaponExplodeReqinteraction.h"
+#include "radarcontrol/CtIRadarControllerinteraction.h"
 
 #include <memory>
 
@@ -374,6 +375,31 @@ void VRLinkManager::pumpOnce() {
     _conn->drainInput();
     // 注意：CtRefIJammerList 和 CtRefIPassiveJammerList 继承自 DtReflectedObjectList，
     // 不需要显式调用 tick()，VR-Link 会在 drainInput() 内部自动处理对象列表的更新和回调触发
+}
+
+bool VRLinkManager::publishRadarControlInteraction(const char* platform_id,
+    const char* equipment_id,
+    int state,
+    double mission_time) {
+    if (!_conn) {
+        return false;
+    }
+    if (!platform_id || !equipment_id) {
+        return false;
+    }
+
+    try {
+        CtIRadarControllerInteraction interaction;
+        interaction.setplatform_id(platform_id);
+        interaction.setequipment_id(equipment_id);
+        interaction.setstate(state);
+        interaction.setmission_time(mission_time);
+        _conn->sendStamped(interaction);
+        return true;
+    }
+    catch (...) {
+        return false;
+    }
 }
 
 VRLinkManager::~VRLinkManager() {

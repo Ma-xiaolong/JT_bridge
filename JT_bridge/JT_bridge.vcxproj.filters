@@ -73,6 +73,12 @@
     <Filter Include="源文件\interaction\ZHLightWeaponExplodeInter">
       <UniqueIdentifier>{c5d6e7f8-a9b0-1234-5678-901234567835}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\interaction\radarcontrol">
+      <UniqueIdentifier>{9c5f1d7a-6b3c-4c2e-8c8e-4a9b35ac7d2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\interaction\radarcontrol">
+      <UniqueIdentifier>{b2d8c3a4-5f61-4d6f-9d21-1c2e4f8a9b0c}</UniqueIdentifier>
+    </Filter>
     <Filter Include="头文件\object\Jammer">
       <UniqueIdentifier>{2af4530f-5b26-4589-995a-cef09f88b6d2}</UniqueIdentifier>
     </Filter>
@@ -248,6 +254,15 @@
     </ClInclude>
     <ClInclude Include="ZHLightWeaponExplodeInter\CtZHLightWeaponExplodeReqIntDec.h">
       <Filter>头文件\interaction\ZHLightWeaponExplodeInter</Filter>
+    </ClInclude>
+    <ClInclude Include="radarcontrol\CtIRadarControllerinteraction.h">
+      <Filter>头文件\interaction\radarcontrol</Filter>
+    </ClInclude>
+    <ClInclude Include="radarcontrol\CtIRadarControllerIntEnc.h">
+      <Filter>头文件\interaction\radarcontrol</Filter>
+    </ClInclude>
+    <ClInclude Include="radarcontrol\CtIRadarControllerIntDec.h">
+      <Filter>头文件\interaction\radarcontrol</Filter>
     </ClInclude>
     <ClInclude Include="resource.h">
       <Filter>头文件</Filter>
@@ -595,6 +610,15 @@
     </ClCompile>
     <ClCompile Include="ZHLightWeaponExplodeInter\CtZHLightWeaponExplodeReqIntDec.cpp">
       <Filter>源文件\interaction\ZHLightWeaponExplodeInter</Filter>
+    </ClCompile>
+    <ClCompile Include="radarcontrol\CtIRadarControllerinteraction.cpp">
+      <Filter>源文件\interaction\radarcontrol</Filter>
+    </ClCompile>
+    <ClCompile Include="radarcontrol\CtIRadarControllerIntEnc.cpp">
+      <Filter>源文件\interaction\radarcontrol</Filter>
+    </ClCompile>
+    <ClCompile Include="radarcontrol\CtIRadarControllerIntDec.cpp">
+      <Filter>源文件\interaction\radarcontrol</Filter>
     </ClCompile>
     <ClCompile Include="callbacks\JammerCallbacks.cpp">
       <Filter>源文件\callbacks</Filter>
