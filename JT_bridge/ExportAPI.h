@@ -3,16 +3,18 @@
 
 extern "C" {
 
-	// ³õÊ¼»¯ VR-Link + Ä£¿é
+	//Ê¼ VR-Link + Ä£
 	__declspec(dllexport) bool __stdcall InitVRLink(const char* federation, const char* federate);
 
-	// ×¢²á Java »Øµ÷£¨Java ´«º¯ÊýÖ¸Õë½øÀ´£©
+	// ×¢ JavaØµJava Ö¸
 	__declspec(dllexport) void __stdcall SetEventCallback(JavaEventCallback cb);
 
-	// Ã¿Ö¡µ÷ÓÃ£ºdrainInput + tick£¨Çý¶¯¶ÔÏóÓë½»»¥£©
+	// Ã¿Ö¡Ã£drainInput + tickë½»
 	__declspec(dllexport) void __stdcall PumpVRLinkOnce();
 
-	// ÊÍ·Å
+	// Publish radarcontrol interaction
+	__declspec(dllexport) bool __stdcall PublishRadarControlInteraction(const char* platform_id, const char* equipment_id, int state, double mission_time);
+
+	// Í·
 	__declspec(dllexport) void __stdcall ShutdownVRLink();
 }
-
