@@ -45,9 +45,9 @@ void onZHAircraftEntityUpdated(CtRefZHAircraftEntity* obj, void* userData) {
         << "\"vy\":" << rep->vy() << ","
         << "\"vz\":" << rep->vz() << ","
         << "\"damage\":" << rep->damage();
-    // if (!rep->other1().empty()) {
-    //     ss << ",\"other1\":\"" << rep->other1() << "\"";
-    // }
+     if (!rep->other1().empty()) {
+         ss << ",\"GlobalID\":\"" << rep->other1() << "\"";
+     }
     // if (!rep->other2().empty()) {
     //     ss << ",\"other2\":\"" << rep->other2() << "\"";
     // }
