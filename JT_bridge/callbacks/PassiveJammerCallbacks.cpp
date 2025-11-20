@@ -34,20 +34,20 @@ void onIPassiveJammerUpdated(CtRefIPassiveJammer* obj, void* userData) {
     std::ostringstream ss;
     ss << "{"
         << "\"passiveJammerId\":\"" << rep->passiveJammerId() << "\","
-        << "\"ht\":" << rep->ht() << ","
-        << "\"bt\":" << rep->bt() << ","
+        // << "\"ht\":" << rep->ht() << ","
+        // << "\"bt\":" << rep->bt() << ","
         << "\"jam_mode\":" << rep->jam_mode() << ","
-        << "\"rcs\":" << rep->rcs() << ","
-        << "\"btgrkd\":" << rep->btgrkd() << ","
-        << "\"btgrgd\":" << rep->btgrgd() << ","
-        << "\"btgrsl\":" << rep->btgrsl() << ","
-        << "\"btgryxxs\":" << rep->btgryxxs() << ","
-        << "\"btgrsc\":" << rep->btgrsc() << ","
-        << "\"btgrsg\":" << rep->btgrsg() << ","
+        // << "\"rcs\":" << rep->rcs() << ","
+        // << "\"btgrkd\":" << rep->btgrkd() << ","
+        // << "\"btgrgd\":" << rep->btgrgd() << ","
+        // << "\"btgrsl\":" << rep->btgrsl() << ","
+        // << "\"btgryxxs\":" << rep->btgryxxs() << ","
+        // << "\"btgrsc\":" << rep->btgrsc() << ","
+        // << "\"btgrsg\":" << rep->btgrsg() << ","
         << "\"btgrzksj\":" << rep->btgrzksj() << ","
-        << "\"btgrlksj\":" << rep->btgrlksj() << ","
-        << "\"sjxjflbc\":" << rep->sjxjflbc();
-    if (!rep->other1().empty()) {
+        << "\"btgrlksj\":" << rep->btgrlksj();
+        // << "\"sjxjflbc\":" << rep->sjxjflbc();
+    /*if (!rep->other1().empty()) {
         ss << ",\"other1\":\"" << rep->other1() << "\"";
     }
     if (!rep->other2().empty()) {
@@ -55,7 +55,7 @@ void onIPassiveJammerUpdated(CtRefIPassiveJammer* obj, void* userData) {
     }
     if (!rep->other3().empty()) {
         ss << ",\"other3\":\"" << rep->other3() << "\"";
-    }
+    }*/
     ss << "}";
     
     // 检查是否是第一次更新
